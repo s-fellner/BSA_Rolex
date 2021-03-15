@@ -39,3 +39,4 @@ This repository contains all the work done by the group Rolex for the project of
   - https://www.hobbesworld.com/dico/mots.php
   - https://www.linternaute.com/
   - Cybersécurité - 5e éd.: Sécurité informatique et réseaux Solange Ghernaouti
+  - https://dicocitations.lemonde.fr/citation.php?mot=these
