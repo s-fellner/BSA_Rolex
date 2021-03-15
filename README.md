@@ -2,6 +2,12 @@
 
 This repository contains all the work done by the group Rolex for the project of Big Scale Analytics 2021.
 
+We intend to assess the problem by building a text recognition classifier which, based on the learning sentences we buildt, would suggest the language level of the sentence. There could be different way to classify sentences : 
+- Based on the overall structure of the sentence (and also the time used for the verbs)
+- The overall lexical level of the sentence (proximity to english words, technical lexic, ...)
+- The use of expressions
+- The Context in which the sentence could be used (thesis, article, advertisement, meal, personnal letter, ...)
+
 # Log
 
 **01.03**
@@ -15,10 +21,6 @@ This repository contains all the work done by the group Rolex for the project of
 
 **15.03**
 - Finishing data building (200 sentences per level)
-
-
-
----
 
 # Sources
 
