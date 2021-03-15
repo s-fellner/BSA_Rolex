@@ -33,6 +33,7 @@ This repository contains all the work done by the group Rolex for the project of
   - https://www.leplaisirdapprendre.com/portfolio/selection-activites-comprehension-ecrite-a1-a2-b1-b2/
   - https://www.podcastfrancaisfacile.com/tag/intermediaire+texte
   - http://www.theses.fr/fr/?q=
+  - https://dicocitations.lemonde.fr/citation.php?mot=these
   - https://www.francepodcasts.com/
   - http://mapage.noos.fr/r.ferreol/langage/archiduchesse.html
   - https://www.hobbesworld.com/dico/mots.php
