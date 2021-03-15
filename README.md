@@ -29,7 +29,7 @@ We intend to assess the problem by building a text recognition classifier which,
  - Building data (sentences) based on texts found on internet : approx. 850 labelised sentences
 
 **15.03**
- - Finishing data building (200 sentences per level)
+ - Finishing data building (about 200 sentences per level)
 
 # Sources
 
