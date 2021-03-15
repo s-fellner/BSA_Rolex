@@ -20,9 +20,6 @@ This repository contains all the work done by the group Rolex for the project of
 
 # Sources
 
-  **Litterature :**
-  
-
   **Language level :**
   - https://www.worddy.co/fr/magazine/connaitre-son-niveau-de-langue-selon-cecrl
   - https://www.france-langue.fr/niveaux-de-francais/
@@ -33,3 +30,11 @@ This repository contains all the work done by the group Rolex for the project of
   - https://scripts.fandom.com/fr/wiki/OSS_117_:_Le_Caire,_nid_d%27espions
   - https://www.gqmagazine.fr/pop-culture/cinema/diaporama/100-rpliques-cultes/725?image=5b992a115e8dfe001124c9a5
   - https://www.wikipedia.fr/
+  - https://www.leplaisirdapprendre.com/portfolio/selection-activites-comprehension-ecrite-a1-a2-b1-b2/
+  - https://www.podcastfrancaisfacile.com/tag/intermediaire+texte
+  - http://www.theses.fr/fr/?q=
+  - https://www.francepodcasts.com/
+  - http://mapage.noos.fr/r.ferreol/langage/archiduchesse.html
+  - https://www.hobbesworld.com/dico/mots.php
+  - https://www.linternaute.com/
+  - Cybersécurité - 5e éd.: Sécurité informatique et réseaux Solange Ghernaouti
