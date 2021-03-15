@@ -14,7 +14,7 @@ We intend to assess the problem by building a text recognition classifier which,
  - B1 : 223
  - B2 : 228
  - C1 : 203
- - C2 :
+ - C2 : 200
  - TOTAL : 1253
 
 # Log
