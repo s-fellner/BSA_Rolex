@@ -2,6 +2,8 @@
 
 This repository contains all the work done by the group Rolex for the project of Big Scale Analytics 2021.
 
+# Log
+
 **01.03**
 - Find CECRL scale (A1, A2, ...) evaluation system to assess the problem more precisely
 - Using contacts to find texts of each level (language school, ...)
