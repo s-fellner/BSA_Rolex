@@ -9,14 +9,16 @@ We intend to assess the problem by building a text recognition classifier which,
  - The Context in which the sentence could be used (thesis, article, advertisement, meal, personnal letter, ...)
 
 **Sentences dataset**
- - A1 : 199
- - A2 : 200
- - B1 : 223
- - B2 : 228
- - C1 : 203
- - C2 : 200
+ - A1 : 199 | 16%
+ - A2 : 200 | 16%
+ - B1 : 223 | 18%
+ - B2 : 228 | 18%
+ - C1 : 203 | 16%
+ - C2 : 200 | 16%
  
  **TOTAL : 1253**
+ 
+ There are more than 1000 sentences, but for the model building, we'll keep 200 sentences per level.
 
 # Log
 
