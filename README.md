@@ -16,7 +16,7 @@ We intend to assess the problem by building a text classifier which, based on th
 
 ## Methodology 🤓 
 
-### Step 1
+### Step 1 📚
 
 Do some literature reserach that could help us solve the problem : 
 
@@ -32,7 +32,7 @@ Do some literature reserach that could help us solve the problem :
 - https://medium.com/swlh/language-classification-using-machine-learning-in-python-fa0768daea67
 
 
-### Step 2 
+### Step 2 📊
 
 Collect the dataset : 
 
