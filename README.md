@@ -36,7 +36,7 @@ Do some literature reserach that could help us solve the problem :
 
 Collect the dataset : 
 
-The labelled data is uploaded here as CSV. 
+The labelled data is uploaded in our  as CSV. 
 
 ***Sentences dataset***
  - A1 : 199 | 16%
