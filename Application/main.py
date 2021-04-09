@@ -19,7 +19,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/signup', methods = ['POST'])
+@app.route('/phrase', methods = ['POST'])
 def signup():
     email = request.form['phrase']
     print("La phrase entrée est '" + phrase + "'")
