@@ -17,25 +17,41 @@ We intend to assess the problem by building a text classifier which, based on th
 ## Methodology 🤓 
 
 **Step 1**
+
 Do some literature reserach that could help us solve the problem : 
 
 ***Articles:***
 
-Flanagan, B., Hirokawa, S., Kaneko, E., & Izumi, E. (2017). Classification of Speaking Proficiency Level by Machine Learning and Feature Selection
-
-Preciado-Grijalva, A., & Brena, R. F. (2018). Speaker Fluency Level Classification Using Machine Learning Techniques
-
-Xiaoyu Bai (2018). Automatic Classification of English Learner Proficiency Using Elicited Versus Spontaneous Data
+- Flanagan, B., Hirokawa, S., Kaneko, E., & Izumi, E. (2017). Classification of Speaking Proficiency Level by Machine Learning and Feature Selection
+- Preciado-Grijalva, A., & Brena, R. F. (2018). Speaker Fluency Level Classification Using Machine Learning Techniques
+- Xiaoyu Bai (2018). Automatic Classification of English Learner Proficiency Using Elicited Versus Spontaneous Data
 
 ***Websites***
 
-https://monkeylearn.com/text-classification/
-
-https://medium.com/swlh/language-classification-using-machine-learning-in-python-fa0768daea67
+- https://monkeylearn.com/text-classification/
+- https://medium.com/swlh/language-classification-using-machine-learning-in-python-fa0768daea67
 
 
 **Step 2** 
-Collect the dataset 
+
+Collect the dataset : 
+
+We collected the french sentences from websites with exercices for non-french speakers and from articles about specific topics. 
+
+To label the data with the difficulty levels, we found some criterias in the internet. 
+The labelled data is uploaded here as CSV. 
+
+***Sentences dataset***
+ - A1 : 199 | 16%
+ - A2 : 200 | 16%
+ - B1 : 223 | 18%
+ - B2 : 228 | 18%
+ - C1 : 203 | 16%
+ - C2 : 200 | 16%
+ 
+ ***TOTAL : 1253***
+ 
+ There are more than 1000 sentences, but for the model building, we'll keep 200 sentences per level.
 
 **Step 3**
 
@@ -49,17 +65,7 @@ There could be different way to classify sentences :
 
 text classifier: auto ML 
 
-**Sentences dataset**
- - A1 : 199 | 16%
- - A2 : 200 | 16%
- - B1 : 223 | 18%
- - B2 : 228 | 18%
- - C1 : 203 | 16%
- - C2 : 200 | 16%
- 
- **TOTAL : 1253**
- 
- There are more than 1000 sentences, but for the model building, we'll keep 200 sentences per level.
+
 
 # Log
 
