@@ -102,5 +102,4 @@ There could be different way to classify sentences :
 
 text classifier: auto ML 
  
-  
-
+ 
