@@ -19,10 +19,11 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/')
-def root():
-    return render_template('index.html')
-
+@app.route('/signup', methods = ['POST'])
+def signup():
+    email = request.form['phrase']
+    print("La phrase entrée est '" + phrase + "'")
+    return redirect('/')
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
