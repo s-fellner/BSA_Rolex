@@ -20,6 +20,18 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+@app.route('/query-example')
+def query_example():
+    return 'Query String Example'
+
+@app.route('/form-example')
+def form_example():
+    return 'Form Data Example'
+
+@app.route('/json-example')
+def json_example():
+    return 'JSON Object Example'
+
 @app.route('/maphrase', methods=['POST'])
 def maPhrase():
     phrase=request.form['phrase']
