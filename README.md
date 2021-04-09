@@ -1,6 +1,6 @@
-# Big scale_Rolex 
+# Big scale_Team Rolex 
 
-Team members
+**Team members**
 
  - Déborah Hernandez 
  - Simon Fellner
