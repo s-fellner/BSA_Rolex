@@ -101,24 +101,6 @@ There could be different way to classify sentences :
  - The Context in which the sentence could be used (thesis, article, advertisement, meal, personnal letter, ...)
 
 text classifier: auto ML 
-
-
-
-# Log
-
-**01.03**
- - Find CECRL scale (A1, A2, ...) evaluation system to assess the problem more precisely
- - Using contacts to find texts of each level (language school, ...)
- - Problem can be assessed globaly (global structure like article ? or like personnal letter ? ...)
- - Or can be assessed precisely, sentence per sentence and then averaged
-
-**08.03**
- - Building data (sentences) based on texts found on internet : approx. 850 labelised sentences
-
-**15.03**
- - Finishing data building (about 200 sentences per level)
-
-
  
   
 
