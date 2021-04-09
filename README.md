@@ -32,7 +32,7 @@ Do some literature reserach that could help us solve the problem :
 - https://medium.com/swlh/language-classification-using-machine-learning-in-python-fa0768daea67
 
 
-**Step 2** 
+### Step 2 
 
 Collect the dataset : 
 
@@ -57,7 +57,6 @@ We collected the french sentences from websites with exercices for non-french sp
 
 - http://www.theses.fr/fr/?q=
 
-
 ***Dictionnaire***
 
 - https://www.hobbesworld.com/dico/mots.php
@@ -66,7 +65,8 @@ We collected the french sentences from websites with exercices for non-french sp
 
 - https://www.linternaute.com/
 - https://www.wikipedia.fr/
-- Solange Ghernaouti (2016) Cybersécurité - 5e éd.: Sécurité informatique et réseaux 
+- Solange Ghernaouti (2016) Cybersécurité - 5e éd.: Sécurité informatique et réseaux
+ 
 
 To label the data with the difficulty levels, we found some criterias in the internet : 
 
@@ -76,6 +76,7 @@ To label the data with the difficulty levels, we found some criterias in the int
 
 
 The labelled data is uploaded here as CSV. 
+
 
 ***Sentences dataset***
  - A1 : 199 | 16%
@@ -89,7 +90,7 @@ The labelled data is uploaded here as CSV.
  
  There are more than 1000 sentences, but for the model building, we'll keep 200 sentences per level.
 
-**Step 3**
+### Step 3
 
 
 
