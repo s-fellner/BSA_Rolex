@@ -1,4 +1,10 @@
-# BSA_Rolex 
+# Big scale_Rolex 
+
+Team members
+
+ - Déborah Hernandez 
+ - Simon Fellner
+ - Maxime Dubi
 
 This repository contains all the work done by the group Rolex for the project of Big Scale Analytics 2021.
 
