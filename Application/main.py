@@ -15,8 +15,6 @@
 # [START gae_python38_render_template]
 # [START gae_python3_render_template]
 
-pip install google-cloud-automl
-
 from flask import Flask, render_template
 
 app = Flask(__name__)
