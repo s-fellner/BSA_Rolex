@@ -8,7 +8,17 @@
 
 This repository contains all the work done by the group Rolex for the project of Big Scale Analytics 2021.
 
-We intend to assess the problem by building a text recognition classifier which, based on the learning sentences we buildt, would suggest the language level of the sentence. There could be different way to classify sentences : 
+**Project description**
+
+The goal of the project is to build a model for predicting the difficulty level of a french sentence. The level concerns the reading understanding of the sentence for a native english speaker. The levels are ranked from A1 which correspond to beginner, to C1 which correspond to proficiency. 
+
+We intend to assess the problem by building a text recognition classifier which, based on the learning sentences we built, would suggest the language level of the sentence. 
+
+**Methodology**
+
+The first step is doing some research 
+
+There could be different way to classify sentences : 
  - Based on the overall structure of the sentence (and also the time used for the verbs)
  - The overall lexical level of the sentence (proximity to english words, technical lexic, ...)
  - The use of expressions
