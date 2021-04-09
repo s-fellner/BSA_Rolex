@@ -16,7 +16,7 @@ We intend to assess the problem by building a text classifier which, based on th
 
 ## Methodology 🤓 
 
-**Step 1**
+### Step 1
 
 Do some literature reserach that could help us solve the problem : 
 
