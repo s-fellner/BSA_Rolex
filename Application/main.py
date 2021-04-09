@@ -20,6 +20,9 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+@app.route('/maphrase', methods=['POST'])
+def maPhrase():
+    phrase=request.form['phrase']
 
 @app.route('/')
 def root():
