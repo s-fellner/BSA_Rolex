@@ -14,7 +14,8 @@
 
 # [START gae_python38_render_template]
 # [START gae_python3_render_template]
-import datetime
+
+pip install google-cloud-automl
 
 from flask import Flask, render_template
 
