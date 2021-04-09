@@ -36,9 +36,45 @@ Do some literature reserach that could help us solve the problem :
 
 Collect the dataset : 
 
-We collected the french sentences from websites with exercices for non-french speakers and from articles about specific topics. 
+We collected the french sentences from websites with exercices for non-french speakers and from articles about specific topics : 
 
-To label the data with the difficulty levels, we found some criterias in the internet. 
+***Exercices de langue***
+
+- https://lingua.com/fr/francais/lecture/
+- https://www.leplaisirdapprendre.com/portfolio/selection-activites-comprehension-ecrite-a1-a2-b1-b2/
+- https://www.podcastfrancaisfacile.com/tag/intermediaire+texte
+- https://www.francepodcasts.com/
+- https://www.france-education-international.fr/sites/default/files/atoms/files/dalf-c2_sujet-demo1_candidat_coll_pe.pdf
+
+***Citations de livres ou films***
+
+- https://scripts.fandom.com/fr/wiki/OSS_117_:_Le_Caire,_nid_d%27espions
+- https://www.gqmagazine.fr/pop-culture/cinema/diaporama/100-rpliques-cultes/725?image=5b992a115e8dfe001124c9a5
+- https://dicocitations.lemonde.fr/citation.php?mot=these
+- http://mapage.noos.fr/r.ferreol/langage/archiduchesse.html
+
+***Thèses***
+
+- http://www.theses.fr/fr/?q=
+
+
+***Dictionnaire***
+
+- https://www.hobbesworld.com/dico/mots.php
+
+***Articles spécifiques***
+
+- https://www.linternaute.com/
+- https://www.wikipedia.fr/
+- Solange Ghernaouti (2016) Cybersécurité - 5e éd.: Sécurité informatique et réseaux 
+
+To label the data with the difficulty levels, we found some criterias in the internet : 
+
+ - https://www.worddy.co/fr/magazine/connaitre-son-niveau-de-langue-selon-cecrl
+ - https://www.france-langue.fr/niveaux-de-francais/
+ - http://www.provincedeliege.be/sites/default/files/media/7476/Europass_-_European_language_levels_-_Self_Assessment_Grid.pdf
+
+
 The labelled data is uploaded here as CSV. 
 
 ***Sentences dataset***
@@ -81,33 +117,7 @@ text classifier: auto ML
 **15.03**
  - Finishing data building (about 200 sentences per level)
 
-# Sources
 
- **Litterature about language classification**
-  - https://arxiv.org/pdf/1808.10556.pdf
-  - https://monkeylearn.com/text-classification/
-  - https://medium.com/swlh/language-classification-using-machine-learning-in-python-fa0768daea67
-  - https://www.researchgate.net/publication/313841337_Classification_of_Speaking_Proficiency_Level_by_Machine_Learning_and_Feature_Selection
-  - Automatic Classification of English Learner Proficiency Using Elicited Versus Spontaneous Data by Xiaoyu Bai
+ 
+  
 
- **Language level :**
-  - https://www.worddy.co/fr/magazine/connaitre-son-niveau-de-langue-selon-cecrl
-  - https://www.france-langue.fr/niveaux-de-francais/
-  - http://www.provincedeliege.be/sites/default/files/media/7476/Europass_-_European_language_levels_-_Self_Assessment_Grid.pdf
-
-  **Sentences :**
-  - https://lingua.com/fr/francais/lecture/
-  - https://scripts.fandom.com/fr/wiki/OSS_117_:_Le_Caire,_nid_d%27espions
-  - https://www.gqmagazine.fr/pop-culture/cinema/diaporama/100-rpliques-cultes/725?image=5b992a115e8dfe001124c9a5
-  - https://www.wikipedia.fr/
-  - https://www.leplaisirdapprendre.com/portfolio/selection-activites-comprehension-ecrite-a1-a2-b1-b2/
-  - https://www.podcastfrancaisfacile.com/tag/intermediaire+texte
-  - http://www.theses.fr/fr/?q=
-  - https://dicocitations.lemonde.fr/citation.php?mot=these
-  - https://www.francepodcasts.com/
-  - http://mapage.noos.fr/r.ferreol/langage/archiduchesse.html
-  - https://www.hobbesworld.com/dico/mots.php
-  - https://www.linternaute.com/
-  - Cybersécurité - 5e éd.: Sécurité informatique et réseaux Solange Ghernaouti
-  - https://dicocitations.lemonde.fr/citation.php?mot=these
-  - https://www.france-education-international.fr/sites/default/files/atoms/files/dalf-c2_sujet-demo1_candidat_coll_pe.pdf
