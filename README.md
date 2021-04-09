@@ -36,6 +36,21 @@ Do some literature reserach that could help us solve the problem :
 
 Collect the dataset : 
 
+The labelled data is uploaded here as CSV. 
+
+***Sentences dataset***
+ - A1 : 199 | 16%
+ - A2 : 228 | 18%
+ - B1 : 223 | 17%
+ - B2 : 228 | 18%
+ - C1 : 203 | 16%
+ - C2 : 200 | 16%
+ 
+ ***TOTAL : 1281***
+ 
+There are more than 1000 sentences, but for the model building, we'll keep 200 sentences per level.
+
+
 We collected the french sentences from websites with exercices for non-french speakers and from articles about specific topics : 
 
 ***Exercices de langue***
@@ -74,21 +89,6 @@ To label the data with the difficulty levels, we found some criterias in the int
  - https://www.france-langue.fr/niveaux-de-francais/
  - http://www.provincedeliege.be/sites/default/files/media/7476/Europass_-_European_language_levels_-_Self_Assessment_Grid.pdf
 
-
-The labelled data is uploaded here as CSV. 
-
-
-***Sentences dataset***
- - A1 : 199 | 16%
- - A2 : 200 | 16%
- - B1 : 223 | 18%
- - B2 : 228 | 18%
- - C1 : 203 | 16%
- - C2 : 200 | 16%
- 
- ***TOTAL : 1253***
- 
- There are more than 1000 sentences, but for the model building, we'll keep 200 sentences per level.
 
 ### Step 3
 
