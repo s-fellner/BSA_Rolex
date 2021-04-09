@@ -8,17 +8,37 @@
 
 This repository contains all the work done by the group Rolex for the project of Big Scale Analytics 2021.
 
-**Project description**🗂️
+## Project description 🗂️
 
 The goal of the project is to build a model for predicting the difficulty level of a french sentence. The level concerns the reading understanding of the sentence for a native english speaker. The levels are ranked from A1 which correspond to beginner, to C1 which correspond to proficiency. 
 
 We intend to assess the problem by building a text classifier which, based on the learning sentences we built, would suggest the language level of the sentence. 
 
-**Methodology**🤓 
+## Methodology 🤓 
 
-Step 1: Doing some literature reserach that could help us solve the problem. 
-Step 2: Collect the dataset 
-Step 3: 
+**Step 1**
+Do some literature reserach that could help us solve the problem : 
+
+***Articles:***
+
+Flanagan, B., Hirokawa, S., Kaneko, E., & Izumi, E. (2017). Classification of Speaking Proficiency Level by Machine Learning and Feature Selection
+
+Preciado-Grijalva, A., & Brena, R. F. (2018). Speaker Fluency Level Classification Using Machine Learning Techniques
+
+Xiaoyu Bai (2018). Automatic Classification of English Learner Proficiency Using Elicited Versus Spontaneous Data
+
+***Websites***
+
+https://monkeylearn.com/text-classification/
+
+https://medium.com/swlh/language-classification-using-machine-learning-in-python-fa0768daea67
+
+
+**Step 2** 
+Collect the dataset 
+
+**Step 3**
+
 
 
 There could be different way to classify sentences : 
