@@ -19,14 +19,12 @@ from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
-@app.route('/')
-def init():
-        return render_template("index.html")
-
-@app.route('/evaluate', methods =['POST'])
+@app.route('/', methods =['GET', 'POST'])
 def evaluate():
-        phrase = request.form.get('phrase')
-        return render_template("results.html", phrase = phrase)
+        phrase = ''
+        if request.method == "POST":
+                phrase =  request.form.get('phrase')
+        return render_template("index.html", phrase = phrase)
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
