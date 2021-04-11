@@ -21,9 +21,13 @@ app = Flask(__name__)
 
 @app.route('/evaluation', methods = ['POST'])
 def evaluation():
-    email = request.form['phrase']
+    phrase = request.form['phrase']
     print("La phrase entrée est '" + phrase + "'")
-    return redirect('/index')
+    return redirect('/')
+
+@app.route('/')
+def root():
+    return render_template('index.html')
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
