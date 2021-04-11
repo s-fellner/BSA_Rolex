@@ -25,7 +25,7 @@ def init():
 
 @app.route('/evaluate', methods =["GET", "POST"])
 def evaluate():
-        phrase = form.request('phrase')
+        phrase = request.form['phrase']
         return render_template("results.html", phrase = phrase)
 
 if __name__ == '__main__':
