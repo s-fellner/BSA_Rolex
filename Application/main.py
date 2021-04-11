@@ -16,7 +16,6 @@
 # [START gae_python3_render_template]
 
 from flask import Flask, request, render_template
-import predict
 
 import sys
 from google.api_core.client_options import ClientOptions
