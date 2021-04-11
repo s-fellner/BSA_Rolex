@@ -1,22 +1,24 @@
-from google.cloud import automl
+import sys
 
-# TODO(developer): Uncomment and set the following variables
-project_id = 685330484131
-model_id = 'TCN4837384969284222976'
+from google.api_core.client_options import ClientOptions
+from google.cloud import automl_v1
+from google.cloud.automl_v1.proto import service_pb2
 
-prediction_client = automl.PredictionServiceClient()
+def inline_text_payload(content):
+  return {'text_snippet': {'content': content, 'mime_type': 'text/plain'} }
 
-# Get the full path of the model.
-model_full_id = automl.AutoMlClient.model_path(project_id, "eu", model_id)
+def get_prediction(content, model_name):
+  options = ClientOptions(api_endpoint='eu-automl.googleapis.com')
+  prediction_client = automl_v1.PredictionServiceClient(client_options=options)
 
-# Supported mime_types: 'text/plain', 'text/html'
-# https://cloud.google.com/automl/docs/reference/rpc/google.cloud.automl.v1#textsnippet
+  payload = inline_text_payload(content)
 
-def lvl(content):
-    text_snippet = automl.TextSnippet(content=content, mime_type="text/plain")
-    payload = automl.ExamplePayload(text_snippet=text_snippet)
-    response = prediction_client.predict(name=model_full_id, payload=payload)
+  params = {}
+  request = prediction_client.predict(model_name, payload, params)
+  return request  # waits until request is returned
 
-    for annotation_payload in response.payload:
-        answer = "Predicted class name: {}".format(annotation_payload.display_name)) + "Predicted class score: {}".format(annotation_payload.classification.score)
-    return answer
+if __name__ == '__main__':
+  file_path = sys.argv[1]
+  model_name = sys.argv[2]
+
+  print get_prediction(content, model_name)
