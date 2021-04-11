@@ -21,7 +21,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def root():
-        phrase = ''
+        phrase = 'test'
     return render_template('index.html', phrase = phrase)
 
 if __name__ == '__main__':
