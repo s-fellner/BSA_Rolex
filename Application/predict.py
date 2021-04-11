@@ -1,31 +1,24 @@
-import sys
+from google.cloud import automl
 
-from google.api_core.client_options import ClientOptions
-from google.cloud import automl_v1
-from google.cloud.automl_v1.proto import service_pb2
+# TODO(developer): Uncomment and set the following variables
+project_id = 685330484131
+model_id = TCN4837384969284222976
+content = ''
 
-def inline_text_payload(file_path):
-  with open(file_path, 'rb') as ff:
-    content = ff.read()
-  return {'text_snippet': {'content': content, 'mime_type': 'text/plain'} }
+prediction_client = automl.PredictionServiceClient()
 
-def pdf_payload(file_path):
-  return {'document': {'input_config': {'gcs_source': {'input_uris': [file_path] } } } }
+# Get the full path of the model.
+model_full_id = automl.AutoMlClient.model_path(project_id, "us-central1", model_id)
 
-def get_prediction(file_path, model_name):
-  options = ClientOptions(api_endpoint='eu-automl.googleapis.com')
-  prediction_client = automl_v1.PredictionServiceClient(client_options=options)
+# Supported mime_types: 'text/plain', 'text/html'
+# https://cloud.google.com/automl/docs/reference/rpc/google.cloud.automl.v1#textsnippet
+text_snippet = automl.TextSnippet(content=content, mime_type="text/plain")
+payload = automl.ExamplePayload(text_snippet=text_snippet)
 
-  payload = inline_text_payload(file_path)
-  # Uncomment the following line (and comment the above line) if want to predict on PDFs.
-  # payload = pdf_payload(file_path)
+response = prediction_client.predict(name=model_full_id, payload=payload)
 
-  params = {}
-  request = prediction_client.predict(model_name, payload, params)
-  return request  # waits until request is returned
-
-if __name__ == '__main__':
-  file_path = sys.argv[1]
-  model_name = sys.argv[2]
-
-  print get_prediction(content, model_name)
+for annotation_payload in response.payload:
+    print(u"Predicted class name: {}".format(annotation_payload.display_name))
+    print(
+        u"Predicted class score: {}".format(annotation_payload.classification.score)
+    )
