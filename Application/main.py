@@ -23,7 +23,7 @@ app = Flask(__name__)
 def evaluation():
     email = request.form['phrase']
     print("La phrase entrée est '" + phrase + "'")
-    return redirect('/')
+    return redirect('/index')
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
