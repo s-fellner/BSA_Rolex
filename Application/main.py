@@ -17,26 +17,27 @@
 
 from flask import Flask, request, render_template
 
-import sys
-from google.api_core.client_options import ClientOptions
-from google.cloud import automl_v1
-from google.cloud.automl_v1.proto import service_pb2
+from google.cloud import automl
 
-model_name = 'projects/685330484131/locations/eu/models/TCN4837384969284222976'
+# TODO(developer): Uncomment and set the following variables
+project_id = "685330484131"
+model_id = "TCN4837384969284222976"
+# content = "text to predict"
 
-def inline_text_payload(content):
-  return {'text_snippet': {'content': content, 'mime_type': 'text/plain'} }
+prediction_client = automl.PredictionServiceClient()
 
-def get_prediction(content):
-  options = ClientOptions(api_endpoint='eu-automl.googleapis.com')
-  prediction_client = automl_v1.PredictionServiceClient(client_options=options)
+# Get the full path of the model.
+model_full_id = automl.AutoMlClient.model_path(project_id, "us-central1", model_id)
 
-  payload = inline_text_payload(content)
+# Supported mime_types: 'text/plain', 'text/html'
+# https://cloud.google.com/automl/docs/reference/rpc/google.cloud.automl.v1#textsnippet
+def predict(content)
+  text_snippet = automl.TextSnippet(content=content, mime_type="text/plain")
+  payload = automl.ExamplePayload(text_snippet=text_snippet)
 
-  params = {}
-  request = prediction_client.predict(model_name, payload, params)
-  return request  # waits until request is returned
-
+  response = prediction_client.predict(name=model_full_id, payload=payload)
+  return response
+    
 app = Flask(__name__)
 
 @app.route('/', methods =['GET', 'POST'])
@@ -44,7 +45,7 @@ def evaluate():
         phrase = ''
         if request.method == "POST":
                 phrase =  request.form.get('phrase')
-                lvl = get_prediction(phrase)
+                lvl = predict(phrase)
         return render_template("index.html", phrase = phrase)
 
 if __name__ == '__main__':
