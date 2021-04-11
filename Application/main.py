@@ -18,6 +18,26 @@
 from flask import Flask, request, render_template
 import predict
 
+import sys
+from google.api_core.client_options import ClientOptions
+from google.cloud import automl_v1
+from google.cloud.automl_v1.proto import service_pb2
+
+model_name = 'projects/685330484131/locations/eu/models/TCN4837384969284222976'
+
+def inline_text_payload(content):
+  return {'text_snippet': {'content': content, 'mime_type': 'text/plain'} }
+
+def get_prediction(content):
+  options = ClientOptions(api_endpoint='eu-automl.googleapis.com')
+  prediction_client = automl_v1.PredictionServiceClient(client_options=options)
+
+  payload = inline_text_payload(content)
+
+  params = {}
+  request = prediction_client.predict(model_name, payload, params)
+  return request  # waits until request is returned
+
 app = Flask(__name__)
 
 @app.route('/', methods =['GET', 'POST'])
@@ -25,8 +45,12 @@ def evaluate():
         phrase = ''
         if request.method == "POST":
                 phrase =  request.form.get('phrase')
-                return predict.get_prediction(phrase)
+                return get_prediction(phrase)
         return render_template("index.html", phrase = phrase)
+
+
+
+
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
