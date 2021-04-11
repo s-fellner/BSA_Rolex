@@ -19,8 +19,8 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/phrase', methods = ['POST'])
-def signup():
+@app.route('/evaluation', methods = ['POST'])
+def evaluation():
     email = request.form['phrase']
     print("La phrase entrée est '" + phrase + "'")
     return redirect('/')
