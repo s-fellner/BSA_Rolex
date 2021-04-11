@@ -19,21 +19,11 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/evaluation', methods = ['post', 'get'])
+@app.route('/', methods = ['post', 'get'])
 def evaluation():
     phrase = ''
     if request.method == 'POST':
         phrase = request.form.get['phrase']
-    return render_template('index.html', phrase = phrase)
-
-@app.route('/test')
-def evaluation():
-    print('Test Réussi !')
-    return redirect('/')
-
-@app.route('/')
-def evaluation():
-    phrase = ''
     return render_template('index.html', phrase = phrase)
 
 if __name__ == '__main__':
