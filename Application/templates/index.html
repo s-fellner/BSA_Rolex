@@ -14,7 +14,9 @@
    <input type="submit" value="Evaluate"></input>
   </form>
 
-  <h2>Phrase entrée : {{ phrase }}</h2>
+  {% if phrase %}
+   <p>Phrase entrée : {{ phrase }}</p>
+  {% endif %}
 
 </body>
 </html>
