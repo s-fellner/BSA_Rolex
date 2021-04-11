@@ -2,7 +2,7 @@ from google.cloud import automl
 
 # TODO(developer): Uncomment and set the following variables
 project_id = 685330484131
-model_id = TCN4837384969284222976
+model_id = 'TCN4837384969284222976'
 content = ''
 
 prediction_client = automl.PredictionServiceClient()
