@@ -24,10 +24,11 @@ def root():
         phrase = 'test'
     return render_template('index.html', phrase = phrase)
 
-@app.route('/evaluate', method=['post'])
+@app.route('/evaluate', methods = ['POST'])
 def evaluate():
-        phrase = request.form.get['phrase']
-     return redirect('/')
+    phrase = request.form['phrase']
+    print("The sentence is '" + phrase + "'")
+    return redirect('/')
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
