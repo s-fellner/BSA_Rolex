@@ -22,7 +22,7 @@ app = Flask(__name__)
 @app.route('/evaluation', methods = ['POST'])
 def evaluation():
     phrase = request.form['phrase']
-    return redirect('/')
+    return redirect('/', phrase=phrase)
 
 @app.route('/')
 def root():
