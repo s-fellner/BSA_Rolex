@@ -9,18 +9,13 @@
   
   <h1>Rolex french level prediction algorithm</h1>
   
-  <form action="/evaluate" method="post">
+  <form action={{ url_for("evaluate")}} method="post">
    <p>
     <label for="phrase">Phrase</label>
     <input type="text" name="phrase">
-   </p>
-  
-   <p>
     <input type="submit">
    </p>
   </form>
-  
-  <p>Phrase entrée : {{ phrase }}</p>
 
 </body>
 </html>
