@@ -20,10 +20,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/', methods =["GET", "POST"])
-def evaluate():
-        if request.method == "POST":
-                phrase = request.form.get("phrase")
-                return "The entered sentence : " + phrase
+def init():
         return render_template("index.html")
 
 if __name__ == '__main__':
