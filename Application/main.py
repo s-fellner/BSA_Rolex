@@ -20,8 +20,8 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
-def evaluation():
-        phrase = 'test'
+def root():
+        phrase = ''
     return render_template('index.html', phrase = phrase)
 
 if __name__ == '__main__':
