@@ -15,7 +15,7 @@
 # [START gae_python38_render_template]
 # [START gae_python3_render_template]
 
-from flask import Flask, render_template
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
