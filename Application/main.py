@@ -24,6 +24,11 @@ def root():
         phrase = 'test'
     return render_template('index.html', phrase = phrase)
 
+@app.route('/evaluate', method=['post'])
+def evaluate():
+        phrase = request.form.get['phrase']
+     return redirect('/')
+
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
     # Engine, a webserver process such as Gunicorn will serve the app. This
