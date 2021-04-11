@@ -16,6 +16,7 @@
 # [START gae_python3_render_template]
 
 from flask import Flask, request, render_template
+import predict
 
 app = Flask(__name__)
 
@@ -24,7 +25,7 @@ def evaluate():
         phrase = ''
         if request.method == "POST":
                 phrase =  request.form.get('phrase')
-                level = predict.py(content = phrase)
+                level = lvl_predict(phrase)
         return render_template("index.html", phrase = level)
 
 if __name__ == '__main__':
