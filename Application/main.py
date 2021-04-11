@@ -19,12 +19,9 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/', methods = ['post', 'get'])
+@app.route('/')
 def evaluation():
-    if request.method == 'POST':
-        phrase = request.form.get['phrase']
-    else:
-        phrase = ''
+        phrase = 'test'
     return render_template('index.html', phrase = phrase)
 
 if __name__ == '__main__':
