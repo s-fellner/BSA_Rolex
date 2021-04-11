@@ -25,7 +25,8 @@ def init():
 
 @app.route('/evaluate', methods =["GET", "POST"])
 def evaluate():
-        return render_template("results.html")
+        phrase = "Phrase entrée"
+        return render_template("results.html", phrase = phrase)
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
