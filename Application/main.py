@@ -44,12 +44,8 @@ def evaluate():
         phrase = ''
         if request.method == "POST":
                 phrase =  request.form.get('phrase')
-                return get_prediction(phrase)
+                lvl = get_prediction(phrase)
         return render_template("index.html", phrase = phrase)
-
-
-
-
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
