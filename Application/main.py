@@ -23,6 +23,10 @@ app = Flask(__name__)
 def init():
         return render_template("index.html")
 
+@app.route('/evaluate', methods =["GET", "POST"])
+def evaluate():
+        return render_template("results.html")
+
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
     # Engine, a webserver process such as Gunicorn will serve the app. This
