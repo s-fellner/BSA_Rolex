@@ -9,7 +9,7 @@ model_name = 'projects/685330484131/locations/eu/models/TCN4837384969284222976'
 def inline_text_payload(content):
   return {'text_snippet': {'content': content, 'mime_type': 'text/plain'} }
 
-def get_prediction(content, model_name):
+def get_prediction(content):
   options = ClientOptions(api_endpoint='eu-automl.googleapis.com')
   prediction_client = automl_v1.PredictionServiceClient(client_options=options)
 
