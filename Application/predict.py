@@ -4,6 +4,8 @@ from google.api_core.client_options import ClientOptions
 from google.cloud import automl_v1
 from google.cloud.automl_v1.proto import service_pb2
 
+model_name = 'projects/685330484131/locations/eu/models/TCN4837384969284222976'
+
 def inline_text_payload(content):
   return {'text_snippet': {'content': content, 'mime_type': 'text/plain'} }
 
