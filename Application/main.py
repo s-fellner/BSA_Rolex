@@ -14,10 +14,31 @@
 
 # [START gae_python38_render_template]
 # [START gae_python3_render_template]
+from google.cloud import automl
+
+# You must first create a dataset, using the `eu` endpoint, before you can
+# call other operations such as: list, get, import, delete, etc.
+client_options = {'api_endpoint': 'eu-automl.googleapis.com:443'}
+
+# TODO(developer): Uncomment and set the following variables
+project_id = '685330484131'
+model_id = 'TCN4837384969284222976'
+
+prediction_client = automl.PredictionServiceClient(client_options=client_options)
+
+# Get the full path of the model.
+model_full_id = automl.AutoMlClient.model_path(project_id, "eu", model_id)
+
+# Supported mime_types: 'text/plain', 'text/html'
+# https://cloud.google.com/automl/docs/reference/rpc/google.cloud.automl.v1#textsnippet
+def predict(content):
+  text_snippet = automl.TextSnippet(content=content, mime_type="text/plain")
+  payload = automl.ExamplePayload(text_snippet=text_snippet)
+
+  response = prediction_client.predict(name=model_full_id, payload=payload)
+  return response
 
 from flask import Flask, request, render_template
-
-import predict
     
 app = Flask(__name__)
 
@@ -26,7 +47,7 @@ def evaluate():
         phrase = ''
         if request.method == "POST":
                 phrase =  request.form.get('phrase')
-                lvl = predict.predict(phrase)
+                lvl = predict(phrase)
                 #top_score = lvl.payload[0]. classification.score
                 top_cat = lvl.payload[0].display_name
         return render_template("index.html", phrase = top_cat)
