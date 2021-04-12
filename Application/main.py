@@ -16,6 +16,8 @@
 # [START gae_python3_render_template]
 
 from flask import Flask, request, render_template
+
+import predict
     
 app = Flask(__name__)
 
@@ -24,8 +26,10 @@ def evaluate():
         phrase = ''
         if request.method == "POST":
                 phrase =  request.form.get('phrase')
-                #lvl = predict(phrase)
-        return render_template("index.html", phrase = phrase)
+                lvl = predict.predict(phrase)
+                #top_score = lvl.payload[0]. classification.score
+                top_cat = lvl.payload[0].display_name
+        return render_template("index.html", phrase = top_cat)
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
