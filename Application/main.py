@@ -54,7 +54,8 @@ def evaluate():
                 lvl = predict(phrase)
                 top_score = lvl.payload[0]. classification.score
                 top_cat = lvl.payload[0].display_name
-        return render_template("index.html", phrase = top_cat)
+                phrase = top_cat
+        return render_template("index.html", phrase = phrase)        
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
