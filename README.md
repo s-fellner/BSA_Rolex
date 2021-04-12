@@ -90,16 +90,11 @@ To label the data with the difficulty levels, we found some criterias in the int
  - http://www.provincedeliege.be/sites/default/files/media/7476/Europass_-_European_language_levels_-_Self_Assessment_Grid.pdf
 
 
-### Step 3
+### Step 3 🖥️
+
+Classify the sentences: 
+
+We used google cloud services to classify the data. It is done with AutoMl from natural language, app engine and the automMl api. 
+It is possible to adjust the sensibility of the model by balancing the precision and recal rate. 
 
 
-
-There could be different way to classify sentences : 
- - Based on the overall structure of the sentence (and also the time used for the verbs)
- - The overall lexical level of the sentence (proximity to english words, technical lexic, ...)
- - The use of expressions
- - The Context in which the sentence could be used (thesis, article, advertisement, meal, personnal letter, ...)
-
-text classifier: auto ML 
- 
- 
