@@ -1,2 +1,2 @@
 Flask==1.1.2
-google-cloud-automl
+google-cloud-automl==2.2.0
