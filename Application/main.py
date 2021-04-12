@@ -17,8 +17,6 @@
 
 from flask import Flask, request, render_template
 
-!pip install google-cloud-automl
-
 from google.cloud import automl
 
 # TODO(developer): Uncomment and set the following variables
