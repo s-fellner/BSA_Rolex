@@ -50,7 +50,8 @@ app = Flask(__name__)
 def evaluate():
         phrase = ''
         if request.method == "POST":
-                phrase =  request.form.get('phrase')
+            phrase =  request.form.get('phrase')
+            if phrase != '':
                 lvl = predict(phrase)
                 top_score = lvl.payload[0]. classification.score
                 top_cat = lvl.payload[0].display_name
