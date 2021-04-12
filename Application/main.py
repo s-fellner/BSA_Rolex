@@ -24,7 +24,7 @@ def evaluate():
         phrase = ''
         if request.method == "POST":
                 phrase =  request.form.get('phrase')
-                lvl = predict(phrase)
+                #lvl = predict(phrase)
         return render_template("index.html", phrase = phrase)
 
 if __name__ == '__main__':
