@@ -1,10 +1,7 @@
-!pip install --upgrade pyyaml
-%pip install google-cloud-automl
+from google.cloud import automl
 
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/content/clefadmin.json"
-
-from google.cloud import automl
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="clefadmin.json"
 
 # You must first create a dataset, using the `eu` endpoint, before you can
 # call other operations such as: list, get, import, delete, etc.
