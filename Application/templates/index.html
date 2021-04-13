@@ -1,27 +1,92 @@
 <!doctype html>
 <html>
- 
+
 <head>
-    <title>Rolex french level prediction algorithm</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <style>
+        video {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        }
+
+        html, body {
+        height: 100%;
+        }
+        html {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 150%;
+        line-height: 1.4;
+        }
+        body {
+        margin: 0;
+        }
+
+        .viewport-header {
+        position: relative;
+        height: 50vh;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+        h1 {
+        font-family: 'VT323', monospace;
+        color: whitesmoke;
+        text-transform: uppercase;
+        letter-spacing: 1vw;
+        line-height: 1.2;
+        font-size: 3vw;
+        text-align: center;
+        span {
+            display: block;
+            font-size: 10vw;
+            letter-spacing: -1.3vw;
+        }
+        }
+
+        main {
+        font-family: 'VT323', monospace;
+        width: 80vw;
+        left: 10%;
+        height: 40vh;
+        overflow: auto;
+        color: rgb(15, 241, 72);
+        position: relative;
+        padding: 1rem;
+        }
+    </style>
 </head>
- 
- <body>
 
+    <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+    <iframe frameborder="0" height="100%" width="100%"
+        src="https://youtube.com/embed/rpWrtXyEAN0?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1" allow="autoplay">
+    </iframe>
+    </div>
+
+
+    <header class="viewport-header">
     <h1><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.pinimg.com/originals/23/24/28/2324287097b26cde49893d5512434254.png" alt="" width="285" height="202" /></h1>
-  
-    <h1 style="text-align: center;">Rolex french level prediction algorithm</h1>
-  
-  <form action={{ url_for("evaluate")}} method="post">
-   <p style="text-align: center;">
-    <label for="phrase">Sentence to evaluate: </label>
-    <input type="text" size=60 name="phrase">
-    <input type="submit">
-   </p>
-  </form>
-  
-  <p style="text-align: center;">{{ phrase }}</p>
-  <p style="text-align: center;">{{ top_cat }} {{ top_score }} </p>
+    <h1 style="text-align: center;"><span style="text-decoration: line-through;">Matrix</span> Rolex french level prediction algorithm</h1>
+    </header>
 
+    <main>
+        <form action={{ url_for("evaluate")}} method="post">
+    <p style="text-align: center;">
+        <label for="phrase">Sentence to evaluate: </label>
+        <input type="text" size=60 name="phrase">
+        <input type="submit">
+    </p>
+    </form>
+    
+    <p style="text-align: center;">{{ phrase }}</p>
+    <p style="text-align: center;">{{ top_cat }} {{ top_score }} </p>
+    </main>
 
-</body>
 </html>
