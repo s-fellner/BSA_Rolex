@@ -1,23 +1,26 @@
 <!doctype html>
 <html>
  
- <head>
-  <title>Rolex french level prediction algorithm</title>
- </head>
+<head>
+    <title>Rolex french level prediction algorithm</title>
+</head>
  
  <body>
+
+    <h1><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.pinimg.com/originals/23/24/28/2324287097b26cde49893d5512434254.png" alt="" width="285" height="202" /></h1>
   
-  <h1>Rolex french level prediction algorithm</h1>
+    <h1 style="text-align: center;">Rolex french level prediction algorithm</h1>
   
   <form action={{ url_for("evaluate")}} method="post">
-   <p>
-    <label for="phrase">Phrase</label>
-    <input type="text" name="phrase">
+   <p style="text-align: center;">
+    <label for="phrase">Sentence to evaluate: </label>
+    <input type="text" size=60 name="phrase">
     <input type="submit">
    </p>
   </form>
   
-  <p>{{ phrase }}</p>
+  <p style="text-align: center;">{{ phrase }}</p>
+  <p style="text-align: center;">{{ top_cat }} {{ top_score }} </p>
 
 
 </body>
