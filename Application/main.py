@@ -49,14 +49,16 @@ app = Flask(__name__)
 @app.route('/', methods =['GET', 'POST'])
 def evaluate():
         phrase = ''
+        top_cat = ''
+        top_score = ''
         if request.method == "POST":
             phrase =  request.form.get('phrase')
             if phrase != '':
                 lvl = predict(phrase)
-                top_score = lvl.payload[0]. classification.score
-                top_cat = lvl.payload[0].display_name
-                phrase = top_cat
-        return render_template("index.html", phrase = phrase)        
+                phrase = '"' + phrase + '"'
+                top_score = ' with a probability of ' + str(round(lvl.payload[0]. classification.score*100)) + '%.'
+                top_cat = 'Level ' + str(lvl.payload[0].display_name)
+        return render_template("index.html", phrase = phrase, top_cat = top_cat, top_score = top_score)          
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
