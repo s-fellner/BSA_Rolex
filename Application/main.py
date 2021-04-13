@@ -26,7 +26,7 @@ client_options = {'api_endpoint': 'eu-automl.googleapis.com:443'}
 
 # TODO(developer): Uncomment and set the following variables
 project_id = '685330484131'
-model_id = 'TCN4837384969284222976'
+model_id = 'TCN9213757907181502464'
 
 prediction_client = automl.PredictionServiceClient(client_options=client_options)
 
