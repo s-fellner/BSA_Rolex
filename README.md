@@ -1,3 +1,6 @@
+![585e9f11cb11b227491c3502](https://user-images.githubusercontent.com/74456354/114553079-8d3ac100-9c65-11eb-910d-816316ef4790.png)
+
+
 # Big scale_Team Rolex ⌚
 
 **WEB APPLICATION IN DEVELOPMENT** 👉 https://rich-wavelet-306313.oa.r.appspot.com/
