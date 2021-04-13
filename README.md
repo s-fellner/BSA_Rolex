@@ -1,6 +1,6 @@
 # Big scale_Team Rolex ⌚
 
-**WEB APPLICATION IN DEVELOPMENT** : https://rich-wavelet-306313.oa.r.appspot.com/
+**WEB APPLICATION IN DEVELOPMENT** 👉 https://rich-wavelet-306313.oa.r.appspot.com/
 
 **Team members**
 
