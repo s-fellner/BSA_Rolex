@@ -21,6 +21,7 @@ We intend to assess the problem by building a text classifier which, based on th
 
 ## Methodology 🤓 
 
+## Milestone 1
 ### Step 1 📚
 
 Do some literature reserach that could help us solve the problem : 
@@ -94,12 +95,14 @@ To label the data with the difficulty levels, we found some criterias in the int
  - https://www.france-langue.fr/niveaux-de-francais/
  - http://www.provincedeliege.be/sites/default/files/media/7476/Europass_-_European_language_levels_-_Self_Assessment_Grid.pdf
 
-
+## Milestone 2
 ### Step 3 🖥️
 
 Classify the sentences: 
 
 We used google cloud services to classify the data. It is done with AutoMl from natural language, app engine and the automMl api. 
 It is possible to adjust the sensibility of the model by balancing the precision and recal rate. 
+
+***Results of the model***
 
 
