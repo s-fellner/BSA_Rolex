@@ -111,3 +111,7 @@ The F1 score of the model is 51,30%
 
 The per-class scores are : 
 
+## Milestone 3
+
+To increase the accuracy of the model, we reused the cognates seen in the assignment to built a table of the 500000 more used cognates. 
+We will then calculate the cognates'percentaga in each sentence to evaluate the level. 
