@@ -105,4 +105,9 @@ It is possible to adjust the sensibility of the model by balancing the precision
 
 ***Results of the model***
 
+The overall precision of the model is 57,84%
+The overall recall of the model is 46,09%
+The F1 score of the model is 51,30%
+
+The per-class scores are : 
 
