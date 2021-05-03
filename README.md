@@ -111,6 +111,8 @@ The F1 score of the model is 51,30%
 
 The per-class scores are : 
 
+<img src="https://user-images.githubusercontent.com/74456180/116883278-b7105380-ac25-11eb-87b7-943c2e1bc6b3.png" width="35" height="30">
+
 ## Milestone 3
 
 To increase the accuracy of the model, we reused the cognates seen in the assignment to built a table of the 500000 more used cognates. 
