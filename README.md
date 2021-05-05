@@ -120,7 +120,11 @@ A DEVELOPPER
 
 By looking at misclassified samples, we can say that 
 
+BLABLA
+
 ### Step 4 🖥️ API 
+
+DEVELOPPER 
 
 ## Milestone 3
 ### Step 5 📈 Improve the model
