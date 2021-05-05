@@ -22,7 +22,7 @@ We intend to assess the problem by building a text classifier which, based on th
 ## Methodology 🤓 
 
 ## Milestone 1
-### Step 1 📚
+### Step 1 📚 Literature
 
 Do some literature reserach that could help us solve the problem : 
 
@@ -38,7 +38,7 @@ Do some literature reserach that could help us solve the problem :
 - https://medium.com/swlh/language-classification-using-machine-learning-in-python-fa0768daea67
 
 
-### Step 2 📊
+### Step 2 📊 Dataset
 
 Collect the dataset : 
 
@@ -96,7 +96,7 @@ To label the data with the difficulty levels, we found some criterias in the int
  - http://www.provincedeliege.be/sites/default/files/media/7476/Europass_-_European_language_levels_-_Self_Assessment_Grid.pdf
 
 ## Milestone 2
-### Step 3 🖥️
+### Step 3 🔎 First model
 
 Classify the sentences: 
 
@@ -120,7 +120,10 @@ A DEVELOPPER
 
 By looking at misclassified samples, we can say that 
 
+### Step 4 🖥️ API 
+
 ## Milestone 3
+### Step 5 📈 Improve the model
 
 To increase the accuracy of the model, we reused the cognates seen in the assignment to built a table of the 500000 more used cognates. 
 We will then calculate the cognates'percentaga in each sentence to evaluate the level. 
