@@ -111,7 +111,7 @@ The F1 score of the model is 51,30%
 
 The per-class scores are : 
 
-<img src="https://user-images.githubusercontent.com/74456180/116883278-b7105380-ac25-11eb-87b7-943c2e1bc6b3.png" width="100" height="100">
+<img src="https://user-images.githubusercontent.com/74456180/116883278-b7105380-ac25-11eb-87b7-943c2e1bc6b3.png" width="200" height="200">
 
 ## Milestone 3
 
