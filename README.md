@@ -103,6 +103,8 @@ Classify the sentences:
 We used google cloud services to classify the data. It is done with AutoMl from natural language, app engine and the automMl api. 
 It is possible to adjust the sensibility of the model by balancing the precision and recal rate. 
 
+A DEVELOPPER
+
 ***Results of the model***
 
 - The overall precision of the model is 57,84%
@@ -114,7 +116,9 @@ It is possible to adjust the sensibility of the model by balancing the precision
 
 - The confusion Matrix of the model is : 
 
-<img src="https://user-images.githubusercontent.com/74456180/117110810-fb673500-ad86-11eb-8df8-68fa9df088a1.png" width="500" height="300">
+<img src="https://user-images.githubusercontent.com/74456180/117110810-fb673500-ad86-11eb-8df8-68fa9df088a1.png" width="500" height="350">
+
+By looking at misclassified samples, we can say that 
 
 ## Milestone 3
 
