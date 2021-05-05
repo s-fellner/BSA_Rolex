@@ -114,7 +114,7 @@ It is possible to adjust the sensibility of the model by balancing the precision
 
 - The confusion Matrix of the model is : 
 
-<img src="https://user-images.githubusercontent.com/74456180/117110810-fb673500-ad86-11eb-8df8-68fa9df088a1.png" width="300" height="300">
+<img src="https://user-images.githubusercontent.com/74456180/117110810-fb673500-ad86-11eb-8df8-68fa9df088a1.png" width="500" height="300">
 
 ## Milestone 3
 
