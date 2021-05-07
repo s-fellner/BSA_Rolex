@@ -131,6 +131,8 @@ Our callable API and UI can be found in this link : https://rich-wavelet-306313.
 ## Milestone 3
 ### Step 5 📈 Improve the model
 
+***Model 2***
+
 To increase the accuracy of the model, we made some feature engineering. To do so, we used : 
 
 - The total number of words of the phrase 
