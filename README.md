@@ -152,3 +152,6 @@ To find the cognates in the phrases, we reused the exercise of the course's assi
 We note that this model did not improve our results. Indeed, we don't have a lot of information about how AutoML works and how it creates the models. Thanks to this model, we understood that it does not interpret the different features, it only takes into account the meaning of the phrase.
 
 ***Model 3***
+
+We used the Tables module of google cloud platform. 
+donnes sous forme de table dans lequelles y a les features. ça supporte diff types de formats de features, detecte correlation avec cible et après construit modèle optimal sur plusieurs features. 
