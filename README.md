@@ -150,3 +150,5 @@ To find the cognates in the phrases, we reused the exercise of the course's assi
 - The F1 score of the model is 36,36%
 
 We note that this model did not improve our results. Indeed, we don't have a lot of information about how AutoML works and how it creates the models. Thanks to this model, we understood that it does not interpret the different features, it only takes into account the meaning of the phrase.
+
+***Model 3***
