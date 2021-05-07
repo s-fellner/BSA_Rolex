@@ -100,10 +100,10 @@ To label the data with the difficulty levels, we found some criterias in the int
 
 Classify the sentences: 
 
-We used google cloud services to classify the data. It is done with AutoMl from natural language, app engine and the automMl api. 
+For our first model, we used google cloud services to classify the data. We only uploaded our dataset on with AutoMl from natural language. 
 It is possible to adjust the sensibility of the model by balancing the precision and recal rate. 
 
-A DEVELOPPER
+A DEVELOPPER???
 
 ***Results of the model***
 
@@ -124,7 +124,9 @@ BLABLA
 
 ### Step 4 🖥️ API 
 
-DEVELOPPER 
+To create the API, we worked with app engine and the automMl API. We made some HTML code to make our API functionnal and look fancy. 
+
+DEVELOPPER???
 
 ## Milestone 3
 ### Step 5 📈 Improve the model
