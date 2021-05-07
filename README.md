@@ -131,3 +131,6 @@ To create the API, we worked with app engine and the automMl API. We coded a pyt
 
 To increase the accuracy of the model, we reused the cognates seen in the assignment to built a table of the 500000 more used cognates. 
 We will then calculate the cognates'percentaga in each sentence to evaluate the level. 
+
+M3: Feature engineering: nb mots tot, liste cognates, nb cognates, ratio cognates, nb punctuation 
+
