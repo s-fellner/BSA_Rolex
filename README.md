@@ -120,17 +120,27 @@ A DEVELOPPER???
 
 By looking at misclassified samples, we can say that 
 
-BLABLA
+BLABLA!!!
 
 ### Step 4 🖥️ API and UI
 
 To create the API, we worked with app engine and the automMl API. We coded a python code to make a functionnal API. We made some HTML code to create the UI and make it look fancy. 
 
+Our callable API and UI can be found in this link : https://rich-wavelet-306313.oa.r.appspot.com/
+
 ## Milestone 3
 ### Step 5 📈 Improve the model
 
-To increase the accuracy of the model, we reused the cognates seen in the assignment to built a table of the 500000 more used cognates. 
-We will then calculate the cognates'percentaga in each sentence to evaluate the level. 
+To increase the accuracy of the model, we made some feature engineering. To do so, we used : 
 
-M3: Feature engineering: nb mots tot, liste cognates, nb cognates, ratio cognates, nb punctuation 
+- The total number of words of the phrase 
+- The list of cognates present in the phrase
+- The number of cognates in the phrase
+- The ratio of cognates in the phrase (number of cognates over total number of words)
+- The number of punctuation
 
+To find the cognates in the phrases, we reused the exercise of the course's assignment where we had to find the cognates with the highest term frequency in english (not considering those where the difference between the term frequency in French and in English exceed 1,000,000). We cleaned the cognates dictionnary to delete the numbers. We buidt a table with 500,000 cognates. 
+
+***Results of the model***
+
+???
