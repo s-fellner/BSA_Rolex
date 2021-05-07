@@ -143,4 +143,8 @@ To find the cognates in the phrases, we reused the exercise of the course's assi
 
 ***Results of the model***
 
-???
+- The overall precision of the model is 43,48%
+- The overall recall of the model is 31,25%
+- The F1 score of the model is 36,36%
+
+We note that this model did not improve our results. Indeed, we don't have a lot of information about how AutoML works and how it creates the models. Thanks to this model, we understood that it does not interpret the different features, it only takes into account the meaning of the phrase.
