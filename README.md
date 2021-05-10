@@ -118,9 +118,6 @@ A DEVELOPPER???
 
 <img src="https://user-images.githubusercontent.com/74456180/117110810-fb673500-ad86-11eb-8df8-68fa9df088a1.png" width="500" height="350">
 
-By looking at misclassified samples, we can say that 
-
-BLABLA!!!
 
 ### Step 4 🖥️ API and UI
 
@@ -148,6 +145,9 @@ To find the cognates in the phrases, we reused the exercise of the course's assi
 - The overall precision of the model is 43,48%
 - The overall recall of the model is 31,25%
 - The F1 score of the model is 36,36%
+- The confusion Matrix of the model is : 
+
+<img src="https://user-images.githubusercontent.com/74456180/117644016-51721900-b189-11eb-9dfc-747144b704de.jpg" width="500" height="350">
 
 We note that this model did not improve our results. Indeed, we don't have a lot of information about how AutoML works and how it creates the models. Thanks to this model, we understood that it does not interpret the different features, it only takes into account the meaning of the phrase.
 
@@ -161,6 +161,9 @@ We used the Tables module of google cloud platform. It allow us to sturucture ou
 
 - The overall precision of the model is 60,60%
 - The overall recall of the model is 19,50%
+- The confusion Matrix of the model is : 
+
+<img src="https://user-images.githubusercontent.com/74456180/117644246-96964b00-b189-11eb-8d15-756481e0b6d7.jpg" width="500" height="350">
 
 As said before, we only decided to work with another module of google cloud and reusing only what we did for model 2, we see that the precision has improved a lot. 
 Howerver we have a low recall. We think we can improve that by vectorizing the senteces. So we decided to improve our model. 
