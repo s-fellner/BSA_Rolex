@@ -155,11 +155,16 @@ We note that this model did not improve our results. Indeed, we don't have a lot
 
 We used the Tables module of google cloud platform. It allow us to sturucture our data per features. It supports different types of formats for each feature and detects the correlation with the target. Then it built the optimal model on several features as we can see in the picture below. 
 
-<img src="https://user-images.githubusercontent.com/74456180/117634742-84afaa80-b17f-11eb-9165-6ffffc815862.png" width="500" height="350">
+<img src="https://user-images.githubusercontent.com/74456180/117634742-84afaa80-b17f-11eb-9165-6ffffc815862.png" width="1700" height="200">
 
+IMPROVEMENT
 
-Improved
+To improve the model 3, we decided to do some preprocess on our data. Here are the steps: 
+
+- We tockenized the sentences with spicy 
+- we extracted the cognates from the tokens 
+- We vectorized the sentences with Tfidf
 
 ***Model 4***
 
-combi model 1 and 3
+The final model will be a combination of the model 1 and 3. 
