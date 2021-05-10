@@ -133,7 +133,7 @@ Our callable API and UI can be found in this link : https://rich-wavelet-306313.
 
 ***Model 2***
 
-To increase the accuracy of the model, we made some feature engineering. To do so, we used : 
+To increase the accuracy of the model, we made some feature engineering still with Natural Language. To do so, we used : 
 
 - The total number of words of the phrase 
 - The list of cognates present in the phrase
@@ -153,5 +153,13 @@ We note that this model did not improve our results. Indeed, we don't have a lot
 
 ***Model 3***
 
-We used the Tables module of google cloud platform. 
-donnes sous forme de table dans lequelles y a les features. ça supporte diff types de formats de features, detecte correlation avec cible et après construit modèle optimal sur plusieurs features. 
+We used the Tables module of google cloud platform. It allow us to sturucture our data per features. It supports different types of formats for each feature and detects the correlation with the target. Then it built the optimal model on several features as we can see in the picture below. 
+
+<img src="https://user-images.githubusercontent.com/74456180/117634742-84afaa80-b17f-11eb-9165-6ffffc815862.png" width="500" height="350">
+
+
+Improved
+
+***Model 4***
+
+combi model 1 and 3
