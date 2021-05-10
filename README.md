@@ -157,14 +157,30 @@ We used the Tables module of google cloud platform. It allow us to sturucture ou
 
 <img src="https://user-images.githubusercontent.com/74456180/117634742-84afaa80-b17f-11eb-9165-6ffffc815862.png" width="1700" height="200">
 
+***Results of the model***
+
+- The overall precision of the model is 60,60%
+- The overall recall of the model is 19,50%
+
+As said before, we only decided to work with another module of google cloud and reusing only what we did for model 2, we see that the precision has improved a lot. 
+Howerver we have a low recall. We think we can improve that by vectorizing the senteces. So we decided to improve our model. 
+
 IMPROVEMENT
 
 To improve the model 3, we decided to do some preprocess on our data. Here are the steps: 
 
-- We tockenized the sentences with spicy 
-- we extracted the cognates from the tokens 
+- We tockenized our cognate's dictionnary 
+- We tockenized the sentences with spacy 
+- we extracted the cognates from the tokens
 - We vectorized the sentences with Tfidf
+- We added features (number of tokens,...)
+
+***Results of the model***
+
+WAITING FOR RESULTS 
 
 ***Model 4***
 
 The final model will be a combination of the model 1 and 3. 
+
+Indeed, we noticed that the model 1 is good at predicting the extremities (level A1 and C2) but is more hesitating in the intermediary levels. So we will use the model 3 to decide between levels A2 to C1.
