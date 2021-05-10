@@ -184,3 +184,5 @@ WAITING FOR RESULTS
 The final model will be a combination of the model 1 and 3. 
 
 Indeed, we noticed that the model 1 is good at predicting the extremities (level A1 and C2) but is more hesitating in the intermediary levels. So we will use the model 3 to decide between levels A2 to C1.
+
+## AIcrowd <img src="https://user-images.githubusercontent.com/74456180/117639815-a1021600-b184-11eb-9ba3-46607da15789.png" width="30" height="30">
