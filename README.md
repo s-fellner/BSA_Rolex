@@ -3,7 +3,7 @@
 
 # Big scale_Team Rolex ⌚
 
-**WEB APPLICATION IN DEVELOPMENT** 👉 https://rich-wavelet-306313.oa.r.appspot.com/
+**WEB APPLICATION** 👉 https://rich-wavelet-306313.oa.r.appspot.com/
 
 **Team members**
 
@@ -102,8 +102,6 @@ Classify the sentences:
 
 For our first model, we used google cloud services to classify the data. We only uploaded our dataset on AutoMl from natural language. 
 It is possible to adjust the sensibility of the model by balancing the precision and recal rate. 
-
-A DEVELOPPER???
 
 ***Results of the model***
 
