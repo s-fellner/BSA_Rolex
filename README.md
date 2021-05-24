@@ -21,8 +21,7 @@ We intend to assess the problem by building a text classifier which, based on th
 
 ## Methodology 🤓 
 
-## Milestone 1
-### Step 1 📚 Literature
+## 📚 Literature
 
 Do some literature reserach that could help us solve the problem : 
 
@@ -38,7 +37,7 @@ Do some literature reserach that could help us solve the problem :
 - https://medium.com/swlh/language-classification-using-machine-learning-in-python-fa0768daea67
 
 
-### Step 2 📊 Dataset
+## 📊 Dataset
 
 Collect the dataset : 
 
@@ -95,8 +94,13 @@ To label the data with the difficulty levels, we found some criterias in the int
  - https://www.france-langue.fr/niveaux-de-francais/
  - http://www.provincedeliege.be/sites/default/files/media/7476/Europass_-_European_language_levels_-_Self_Assessment_Grid.pdf
 
-## Milestone 2
-### Step 3 🔎 First model
+## 🖥️ API and UI
+
+To create the API, we worked with app engine and the automMl API. We coded a python code to make a functionnal API. We made some HTML code to create the UI and make it look fancy. 
+
+Our callable API and UI can be found in this link : https://rich-wavelet-306313.oa.r.appspot.com/
+
+## Model A (Natural Language)
 
 Classify the sentences: 
 
@@ -117,16 +121,7 @@ It is possible to adjust the sensibility of the model by balancing the precision
 <img src="https://user-images.githubusercontent.com/74456180/117110810-fb673500-ad86-11eb-8df8-68fa9df088a1.png" width="500" height="350">
 
 
-### Step 4 🖥️ API and UI
-
-To create the API, we worked with app engine and the automMl API. We coded a python code to make a functionnal API. We made some HTML code to create the UI and make it look fancy. 
-
-Our callable API and UI can be found in this link : https://rich-wavelet-306313.oa.r.appspot.com/
-
-## Milestone 3
-### Step 5 📈 Improve the model
-
-***Model 2***
+## Model B (Natural Language +)
 
 To increase the accuracy of the model, we made some feature engineering still with Natural Language. To do so, we used : 
 
@@ -149,7 +144,7 @@ To find the cognates in the phrases, we reused the exercise of the course's assi
 
 We note that this model did not improve our results. Indeed, we don't have a lot of information about how AutoML works and how it creates the models. Thanks to this model, we understood that it does not interpret the different features, it only takes into account the meaning of the phrase.
 
-***Model 3***
+## Model C (Tables) 
 
 We used the Tables module of google cloud platform. It allow us to sturucture our data per features. It supports different types of formats for each feature and detects the correlation with the target. Then it built the optimal model on several features as we can see in the picture below. 
 
@@ -176,8 +171,6 @@ To improve the model 3, we decided to do some preprocess on our data. Here are t
 - we extracted the cognates from the tokens
 - We added features (number of tokens,...)
 
-NOTE: - We vectorized the sentences with Tfidf not poss DEVVV
-
 ***Results of the model***
 
 - The overall accuracy of the model is 64,80%
@@ -187,7 +180,13 @@ NOTE: - We vectorized the sentences with Tfidf not poss DEVVV
 
 <img src="" width="500" height="350">
 
-***Model 4***
+## Model D (Tfidf)
+
+- We vectorized the sentences with Tfidf not poss DEVVV
+
+## Model E (Word/Word)
+
+## Final Model 
 
 The final model will be a combination of the model 1 and 3. 
 
