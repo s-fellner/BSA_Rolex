@@ -200,6 +200,8 @@ Unfortunately this Model did not work as google AutoML Tables do not support mor
 
 ### Model E (Word/Word)
 
+The idea of this model is to tokenize each phrase and to create one row for each tocken and the associated level of this word. 
+
 ### Final Model 
 
 The final model will be a combination of the best models, so that we will have a doble prediction to pic the best score of prediction between the two models. 
