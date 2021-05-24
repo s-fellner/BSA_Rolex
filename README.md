@@ -111,7 +111,7 @@ It is possible to adjust the sensibility of the model by balancing the precision
 
 ***Results of the model with our dataset***
 
-- The overall accuracy of the model is 57.84%
+- The overall accuracy of the model is 54.69%
 - The overall recall of the model is 46.09%
 - The F1 score of the model is 51.30%
 - The per-class scores are : 
@@ -124,9 +124,9 @@ It is possible to adjust the sensibility of the model by balancing the precision
 
 ***Results of the model with AIcrowd dataset***
 
-- The overall accuracy of the model is 59.94%
+- The overall accuracy of the model is 51.67%
 - The overall recall of the model is 41.46%
-- The F1 score of the model is %
+- The F1 score of the model is 49.02%
 - The confusion Matrix of the model is : 
 
 <img src="https://user-images.githubusercontent.com/74456180/119358998-71392f00-bca9-11eb-91c9-aad913bd339e.jpg" width="500" height="350">
@@ -145,7 +145,7 @@ To find the cognates in the phrases, we reused the exercise of the course's assi
 
 ***Results of the model with our dataset***
 
-- The overall accuracy of the model is 43.48%
+- The overall accuracy of the model is 42.60%
 - The overall recall of the model is 31.25%
 - The F1 score of the model is 36.36%
 - The confusion Matrix of the model is : 
@@ -193,7 +193,7 @@ To improve the model 3, we decided to do some preprocess on our data. Here are t
 ### Model D (Tfidf)
 
 We decided to vectorize the sentences with Tfidf. So we trained the data, we created the vector and exported it with the Pickle Module. 
-Unfortunately this Model did not work as google AutoML Tables do not support more than 1000 colomns and we had more.
+Unfortunately this Model did not work as google AutoML Tables do not support more than 1000 columns and we had more.
 
 ![](pickle.webp)
 
@@ -211,3 +211,5 @@ Indeed, we noticed that the model A is good at predicting the extremities (level
 A COMPLETER!!
 
 ## AIcrowd <img src="https://user-images.githubusercontent.com/74456180/117639815-a1021600-b184-11eb-9ba3-46607da15789.png" width="30" height="30">
+
+We faced a problem at the beggining because the batch.predict in google AutoML Table all the results were mixed. So we had to use Excel and Python solutions to be able to submit the right data. 
