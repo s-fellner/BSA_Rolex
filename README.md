@@ -187,7 +187,7 @@ To improve the model 3, we decided to do some preprocess on our data. Here are t
 We decided to vectorize the sentences with Tfidf. So we trained the data, we created the vector and exported it with the Pickle Module. 
 Unfortunately this Model did not work as google AutoML Tables do not support more than 1000 colomns and we had more.
 
-<iframe src="https://giphy.com/embed/JmPenP1svctdfDCEHi" width="480" height="480" frameBorder="0">
+<img src="https://giphy.com/embed/JmPenP1svctdfDCEHi" width="480" height="480" frameBorder="0">
 
 ### Model E (Word/Word)
 
