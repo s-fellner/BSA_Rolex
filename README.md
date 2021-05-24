@@ -58,7 +58,7 @@ There are more than 1000 sentences, but for the model building, we'll keep 200 s
 
 We collected the french sentences from websites with exercices for non-french speakers and from articles about specific topics : 
 
-***Exercices de langue***
+***Language exercises***
 
 - https://lingua.com/fr/francais/lecture/
 - https://www.leplaisirdapprendre.com/portfolio/selection-activites-comprehension-ecrite-a1-a2-b1-b2/
@@ -66,22 +66,22 @@ We collected the french sentences from websites with exercices for non-french sp
 - https://www.francepodcasts.com/
 - https://www.france-education-international.fr/sites/default/files/atoms/files/dalf-c2_sujet-demo1_candidat_coll_pe.pdf
 
-***Citations de livres ou films***
+***Books or movies citations***
 
 - https://scripts.fandom.com/fr/wiki/OSS_117_:_Le_Caire,_nid_d%27espions
 - https://www.gqmagazine.fr/pop-culture/cinema/diaporama/100-rpliques-cultes/725?image=5b992a115e8dfe001124c9a5
 - https://dicocitations.lemonde.fr/citation.php?mot=these
 - http://mapage.noos.fr/r.ferreol/langage/archiduchesse.html
 
-***Thèses***
+***Thesis***
 
 - http://www.theses.fr/fr/?q=
 
-***Dictionnaire***
+***Dictionary***
 
 - https://www.hobbesworld.com/dico/mots.php
 
-***Articles spécifiques***
+***Specific articles***
 
 - https://www.linternaute.com/
 - https://www.wikipedia.fr/
@@ -100,9 +100,11 @@ To create the API, we worked with app engine and the automMl API. We coded a pyt
 
 Our callable API and UI can be found in this link : https://rich-wavelet-306313.oa.r.appspot.com/
 
-## Model A (Natural Language)
+## Models
 
-Classify the sentences: 
+We created various model to assess the problem of classifying the sentences. They are explained and evaluated below. 
+
+### Model A (Natural Language)
 
 For our first model, we used google cloud services to classify the data. We only uploaded our dataset on AutoMl from natural language. 
 It is possible to adjust the sensibility of the model by balancing the precision and recal rate. 
@@ -166,7 +168,7 @@ IMPROVEMENT
 
 To improve the model 3, we decided to do some preprocess on our data. Here are the steps: 
 
-- We lematized our cognate's dictionnary DEVVV
+- We lematized our cognate's dictionnary DEVVV!!!!!!!!!!!!!!!!
 - We tockenized the sentences with spacy 
 - we extracted the cognates from the tokens
 - We added features (number of tokens,...)
@@ -178,18 +180,23 @@ To improve the model 3, we decided to do some preprocess on our data. Here are t
 - The F1 score of the model is 25,80%
 - The confusion Matrix of the model is : 
 
-<img src="" width="500" height="350">
+<img src="https://user-images.githubusercontent.com/74456180/119351156-75ad1a00-bca0-11eb-89cb-fbe86fdf9283.jpg" width="500" height="350">
 
 ## Model D (Tfidf)
 
-- We vectorized the sentences with Tfidf not poss DEVVV
+We decided to vectorize the sentences with Tfidf POUR!!!!!
 
 ## Model E (Word/Word)
 
 ## Final Model 
 
-The final model will be a combination of the model 1 and 3. 
+The final model will be a combination of the best models, so that we will have a doble prediction to pic the best score of prediction between the two models. 
+We chose Model A (Natural Language) and Model C (Table) 
 
-Indeed, we noticed that the model 1 is good at predicting the extremities (level A1 and C2) but is more hesitating in the intermediary levels. So we will use the model 3 to decide between levels A2 to C1.
+Indeed, we noticed that the model A is good at predicting the extremities (level A1 and C2) but is more hesitating in the intermediary levels. So we will use the model C to decide between levels A2 to C1.
+
+***Results of the model***
+
+A COMPLETER!!
 
 ## AIcrowd <img src="https://user-images.githubusercontent.com/74456180/117639815-a1021600-b184-11eb-9ba3-46607da15789.png" width="30" height="30">
