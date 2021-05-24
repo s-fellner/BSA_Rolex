@@ -111,9 +111,9 @@ It is possible to adjust the sensibility of the model by balancing the precision
 
 ***Results of the model***
 
-- The overall accuracy of the model is 57,84%
-- The overall recall of the model is 46,09%
-- The F1 score of the model is 51,30%
+- The overall accuracy of the model is 57.84%
+- The overall recall of the model is 46.09%
+- The F1 score of the model is 51.30%
 - The per-class scores are : 
 
 <img src="https://user-images.githubusercontent.com/74456180/116883278-b7105380-ac25-11eb-87b7-943c2e1bc6b3.png" width="200" height="200">
@@ -123,7 +123,7 @@ It is possible to adjust the sensibility of the model by balancing the precision
 <img src="https://user-images.githubusercontent.com/74456180/117110810-fb673500-ad86-11eb-8df8-68fa9df088a1.png" width="500" height="350">
 
 
-## Model B (Natural Language +)
+### Model B (Natural Language +)
 
 To increase the accuracy of the model, we made some feature engineering still with Natural Language. To do so, we used : 
 
@@ -137,16 +137,16 @@ To find the cognates in the phrases, we reused the exercise of the course's assi
 
 ***Results of the model***
 
-- The overall accuracy of the model is 43,48%
-- The overall recall of the model is 31,25%
-- The F1 score of the model is 36,36%
+- The overall accuracy of the model is 43.48%
+- The overall recall of the model is 31.25%
+- The F1 score of the model is 36.36%
 - The confusion Matrix of the model is : 
 
 <img src="https://user-images.githubusercontent.com/74456180/117644016-51721900-b189-11eb-9dfc-747144b704de.jpg" width="500" height="350">
 
 We note that this model did not improve our results. Indeed, we don't have a lot of information about how AutoML works and how it creates the models. Thanks to this model, we understood that it does not interpret the different features, it only takes into account the meaning of the phrase.
 
-## Model C (Tables) 
+### Model C (Tables) 
 
 We used the Tables module of google cloud platform. It allow us to sturucture our data per features. It supports different types of formats for each feature and detects the correlation with the target. Then it built the optimal model on several features as we can see in the picture below. 
 
@@ -154,8 +154,8 @@ We used the Tables module of google cloud platform. It allow us to sturucture ou
 
 ***Results of the model***
 
-- The overall accuracy of the model is 60,60%
-- The overall recall of the model is 19,50%
+- The overall accuracy of the model is 60.60%
+- The overall recall of the model is 19.50%
 - The F1 score of the model is 29.50%
 - The confusion Matrix of the model is : 
 
@@ -168,27 +168,27 @@ IMPROVEMENT
 
 To improve the model 3, we decided to do some preprocess on our data. Here are the steps: 
 
-- We lematized our cognate's dictionnary DEVVV!!!!!!!!!!!!!!!!
 - We tockenized the sentences with spacy 
 - we extracted the cognates from the tokens
 - We added features (number of tokens,...)
+- We lematized our cognate's dictionnary. Indeed, our cognate's dictionnary was not of trust so we did a lematization that permited us having a more optimized list of cognates (310,508 cognates). 
 
 ***Results of the model***
 
-- The overall accuracy of the model is 64,80%
-- The overall recall of the model is 16,10%
-- The F1 score of the model is 25,80%
+- The overall accuracy of the model is 64.80%
+- The overall recall of the model is 16.10%
+- The F1 score of the model is 25.80%
 - The confusion Matrix of the model is : 
 
 <img src="https://user-images.githubusercontent.com/74456180/119351156-75ad1a00-bca0-11eb-89cb-fbe86fdf9283.jpg" width="500" height="350">
 
-## Model D (Tfidf)
+### Model D (Tfidf)
 
 We decided to vectorize the sentences with Tfidf POUR!!!!!
 
-## Model E (Word/Word)
+### Model E (Word/Word)
 
-## Final Model 
+### Final Model 
 
 The final model will be a combination of the best models, so that we will have a doble prediction to pic the best score of prediction between the two models. 
 We chose Model A (Natural Language) and Model C (Table) 
