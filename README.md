@@ -105,7 +105,7 @@ It is possible to adjust the sensibility of the model by balancing the precision
 
 ***Results of the model***
 
-- The overall precision of the model is 57,84%
+- The overall accuracy of the model is 57,84%
 - The overall recall of the model is 46,09%
 - The F1 score of the model is 51,30%
 - The per-class scores are : 
@@ -140,7 +140,7 @@ To find the cognates in the phrases, we reused the exercise of the course's assi
 
 ***Results of the model***
 
-- The overall precision of the model is 43,48%
+- The overall accuracy of the model is 43,48%
 - The overall recall of the model is 31,25%
 - The F1 score of the model is 36,36%
 - The confusion Matrix of the model is : 
@@ -157,8 +157,9 @@ We used the Tables module of google cloud platform. It allow us to sturucture ou
 
 ***Results of the model***
 
-- The overall precision of the model is 60,60%
+- The overall accuracy of the model is 60,60%
 - The overall recall of the model is 19,50%
+- The F1 score of the model is 29.50%
 - The confusion Matrix of the model is : 
 
 <img src="https://user-images.githubusercontent.com/74456180/117644246-96964b00-b189-11eb-8d15-756481e0b6d7.jpg" width="500" height="350">
@@ -170,15 +171,21 @@ IMPROVEMENT
 
 To improve the model 3, we decided to do some preprocess on our data. Here are the steps: 
 
-- We tockenized our cognate's dictionnary 
+- We lematized our cognate's dictionnary DEVVV
 - We tockenized the sentences with spacy 
 - we extracted the cognates from the tokens
-- We vectorized the sentences with Tfidf
 - We added features (number of tokens,...)
+
+NOTE: - We vectorized the sentences with Tfidf not poss DEVVV
 
 ***Results of the model***
 
-WAITING FOR RESULTS 
+- The overall accuracy of the model is 64,80%
+- The overall recall of the model is 16,10%
+- The F1 score of the model is 25,80%
+- The confusion Matrix of the model is : 
+
+<img src="" width="500" height="350">
 
 ***Model 4***
 
