@@ -103,6 +103,7 @@ Our callable API and UI can be found in this link : https://rich-wavelet-306313.
 ## Models
 
 We created various model to assess the problem of classifying the sentences. They are explained and evaluated below. 
+Note : All our F1 scores are based on a threshold score of 0.5.
 
 ### Model A (Natural Language)
 
