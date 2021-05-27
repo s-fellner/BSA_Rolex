@@ -222,23 +222,27 @@ We build a "Monitoring" model, in which we enter all the scores predicted from b
 
 <img src="https://user-images.githubusercontent.com/74456180/119832740-bf933b80-befe-11eb-8a54-bc28ed226150.jpg" width="500" height="350">
 
+Our final model has great results, indeed the accuracy is quite high and the recall is also better than for the previous models. So the F1 score is good. 
+We are satisfied about this model!
+
 ## AIcrowd <img src="https://user-images.githubusercontent.com/74456180/117639815-a1021600-b184-11eb-9ba3-46607da15789.png" width="30" height="30">
 
 We faced a problem at the beggining because the batch.predict in google AutoML Table all the results were mixed. So we had to use Excel and Python solutions to be able to submit the right data. 
 
-résultat correspon pas a AIcrowd!!!!!!!!!!!!!!!!!! prend pas indice de confiance le plus élévé mais juste celui qui dépasse le score 
+However, we were surprised about the results on AICrowd. Indeed, it does not correspond to the results we get on Google cloud for our final model. It is certainly due to the functionning of Google cloud. The prediction does not take the level with the higher confidence index but only the first level having the wanted threshold. 
+
+## Colab
+
+We joined our colab to the github. It contains the development  of the environment, the function batch predict and the construction of our cognates' dictionnary. 
 
 ## Workload
 
 The repartition of the work within our group was the following: 
 
-Literature research : Maxime
-Dataset : Maxime & Déborah 
-Readme : Déborah 
-UI : Déborah & Simon
-Models : Simon
-Video preparation : Maxime
-
-
-
+- Literature research : Maxime
+- Dataset : Maxime & Déborah 
+- Readme : Déborah 
+- UI : Déborah & Simon
+- Models : Simon
+- Video preparation : Maxime
 
