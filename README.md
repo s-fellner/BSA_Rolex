@@ -215,8 +215,17 @@ We build a "Monitoring" model, in which we enter all the scores predicted from b
 
 ***Results of the model***
 
-TO COMPLETE !!!
+- The overall accuracy of the model is 67.90%
+- The overall recall of the model is 29.90%
+- The F1 score of the model is 41.60%
+- The confusion Matrix of the model is : 
+
+<img src="https://user-images.githubusercontent.com/74456180/119832740-bf933b80-befe-11eb-8a54-bc28ed226150.jpg" width="500" height="350">
 
 ## AIcrowd <img src="https://user-images.githubusercontent.com/74456180/117639815-a1021600-b184-11eb-9ba3-46607da15789.png" width="30" height="30">
 
 We faced a problem at the beggining because the batch.predict in google AutoML Table all the results were mixed. So we had to use Excel and Python solutions to be able to submit the right data. 
+
+résultat correspon pas a AIcrowd!!!!!!!!!!!!!!!!!! prend pas indice de confiance le plus élévé mais juste celui qui dépasse le score 
+
+## Workload
