@@ -243,7 +243,7 @@ We joined our colab to the github. It contains the development  of the environme
 
 ## Workload
 
-The repartition of the work within our group was the following: 
+In general, we worked together on the whole project, we met almost everytime we worked on it. But if we had to summerize the repartition of the work within our group, it would be the following: 
 
 - Literature research : Maxime
 - Dataset : Maxime & Déborah 
