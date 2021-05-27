@@ -94,6 +94,12 @@ To label the data with the difficulty levels, we found some criterias in the int
  - https://www.france-langue.fr/niveaux-de-francais/
  - http://www.provincedeliege.be/sites/default/files/media/7476/Europass_-_European_language_levels_-_Self_Assessment_Grid.pdf
 
+## General architecture
+
+In the picture below is described de general architecture of the technologies we used in our project. 
+
+<img src="https://user-images.githubusercontent.com/74456180/119887698-bc1aa700-bf34-11eb-8840-2e6763174f42.JPG" width="600" height="400">
+
 ## 🖥️ API and UI
 
 To create the API, we worked with app engine and the automMl API. We coded a python code to make a functionnal API. We made some HTML code to create the UI and make it look fancy. 
@@ -208,6 +214,14 @@ Indeed, we noticed that the model A is good at predicting the extremities (level
 To proceed in combining those two models, we firstly established an algorithm predicting a sentence in model A and in model C. This algorithm wil then select the prediction with the highest score. This method worked well, but we figured a way to improve this way to work.
 
 We build a "Monitoring" model, in which we enter all the scores predicted from both model A and C. To achieve a proper model building, we split the training model in a 3000 lines and a 1800 lines datasets. The 3000 lines datasets were used to build a model A and a model C, and the 1800 dataset to build the monitoring model.
+
+To better understand, the image below illustrate the functionning and how we built our final model. 
+
+<img src="https://user-images.githubusercontent.com/74456180/119887994-20d60180-bf35-11eb-9040-b82d351260dc.JPG" width="900" height="550">
+
+The second image below represents the flow of the steps of the functionning of our system. 
+
+<img src="https://user-images.githubusercontent.com/74456180/119888672-f173c480-bf35-11eb-89dd-4ec9244fe2bf.JPG"  width="1000" height="200">
 
 ***Results of the model with AIcrowd dataset***
 
