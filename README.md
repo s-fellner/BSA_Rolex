@@ -235,7 +235,7 @@ This shows that the two models are complementary, indeed for predicting class pe
 
 We faced a problem at the beggining because the batch.predict in google AutoML Table all the results were mixed. So we had to use Excel and Python solutions to be able to submit the right data. 
 
-However, we were surprised about the results on AICrowd. Indeed, it does not correspond to the results we get on Google cloud for our final model. It is certainly due to the functionning of Google cloud. The prediction does not take the level with the higher confidence index but only the first level having the wanted threshold. 
+However, we were surprised about the results on AICrowd. Indeed, it does not correspond to the results we get on Google cloud for our final model. It is certainly due to the functionning of Google cloud. The prediction does not take the level with the higher confidence index but all the levels having the wanted threshold. In our code, we modified this to take the higher score. 
 
 ## Colab
 
