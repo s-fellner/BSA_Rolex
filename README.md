@@ -222,6 +222,22 @@ We build a "Monitoring" model, in which we enter all the scores predicted from b
 
 <img src="https://user-images.githubusercontent.com/74456180/119832740-bf933b80-befe-11eb-8a54-bc28ed226150.jpg" width="500" height="350">
 
+- The caracteristics' importance is : 
+
+<img src="https://user-images.githubusercontent.com/74456180/119839835-c0c76700-bf04-11eb-8de5-697731a71096.jpg" width="500" height="350">
+
+dit a quel point les indices sont importants: 
+ C2 et A1 nl meilleurs que tabl
+ C1 table meilleur 
+ B1 et A2 nl meilleur 
+ B2 nl
+ b2 tbl et mauvais 
+ 
+ top score et top catégorie de table est meilleur 
+ manière générale 
+ 
+ montre que 2 sont complémentaires car class par class nl meilleur mais pour top, souvent table 
+
 Our final model has great results, indeed the accuracy is quite high and the recall is also better than for the previous models. So the F1 score is good. 
 We are satisfied about this model!
 
@@ -233,7 +249,7 @@ However, we were surprised about the results on AICrowd. Indeed, it does not cor
 
 ## Colab
 
-We joined our colab to the github. It contains the development  of the environment, the function batch predict and the construction of our cognates' dictionnary. 
+We joined our colab to the github. It contains the development  of the environment, the function batch predict, the construction of our cognates' dictionnary and the formating of the traindata for the final model. 
 
 ## Workload
 
