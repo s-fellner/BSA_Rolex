@@ -229,3 +229,16 @@ We faced a problem at the beggining because the batch.predict in google AutoML T
 résultat correspon pas a AIcrowd!!!!!!!!!!!!!!!!!! prend pas indice de confiance le plus élévé mais juste celui qui dépasse le score 
 
 ## Workload
+
+The repartition of the work within our group was the following: 
+
+Literature research : Maxime
+Dataset : Maxime & Déborah 
+Readme : Déborah 
+UI : Déborah & Simon
+Models : Simon
+Video preparation : Maxime
+
+
+
+
