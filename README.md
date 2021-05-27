@@ -215,7 +215,7 @@ We build a "Monitoring" model, in which we enter all the scores predicted from b
 
 ***Results of the model***
 
-A COMPLETER!!
+À COMPLETER!!
 
 ## AIcrowd <img src="https://user-images.githubusercontent.com/74456180/117639815-a1021600-b184-11eb-9ba3-46607da15789.png" width="30" height="30">
 
