@@ -173,7 +173,7 @@ We used the Tables module of google cloud platform. It allow us to sturucture ou
 As said before, we only decided to work with another module of google cloud and reusing only what we did for model 2, we see that the precision has improved a lot. 
 Howerver we have a low recall. We think we can improve that by vectorizing the senteces. So we decided to improve our model. 
 
-IMPROVEMENT
+***Improvement***
 
 To improve the model 3, we decided to do some preprocess on our data. Here are the steps: 
 
@@ -213,7 +213,7 @@ To proceed in combining those two models, we firstly established an algorithm pr
 
 We build a "Monitoring" model, in which we enter all the scores predicted from both model A and C. To achieve a proper model building, we split the training model in a 3000 lines and a 1800 lines datasets. The 3000 lines datasets were used to build a model A and a model C, and the 1800 dataset to build the monitoring model.
 
-***Results of the model***
+***Results of the model with AIcrowd dataset***
 
 - The overall accuracy of the model is 67.90%
 - The overall recall of the model is 29.90%
