@@ -115,10 +115,6 @@ It is possible to adjust the sensibility of the model by balancing the precision
 - The overall accuracy of the model is 54.69%
 - The overall recall of the model is 46.09%
 - The F1 score of the model is 51.30%
-- The per-class scores are : 
-
-<img src="https://user-images.githubusercontent.com/74456180/116883278-b7105380-ac25-11eb-87b7-943c2e1bc6b3.png" width="200" height="200">
-
 - The confusion Matrix of the model is : 
 
 <img src="https://user-images.githubusercontent.com/74456180/117110810-fb673500-ad86-11eb-8df8-68fa9df088a1.png" width="500" height="350">
