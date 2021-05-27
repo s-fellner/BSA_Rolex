@@ -222,24 +222,18 @@ We build a "Monitoring" model, in which we enter all the scores predicted from b
 
 <img src="https://user-images.githubusercontent.com/74456180/119832740-bf933b80-befe-11eb-8a54-bc28ed226150.jpg" width="500" height="350">
 
-- The caracteristics' importance is : 
-
-<img src="https://user-images.githubusercontent.com/74456180/119839835-c0c76700-bf04-11eb-8de5-697731a71096.jpg" width="500" height="350">
-
-dit a quel point les indices sont importants: 
- C2 et A1 nl meilleurs que tabl
- C1 table meilleur 
- B1 et A2 nl meilleur 
- B2 nl
- b2 tbl et mauvais 
- 
- top score et top catégorie de table est meilleur 
- manière générale 
- 
- montre que 2 sont complémentaires car class par class nl meilleur mais pour top, souvent table 
-
 Our final model has great results, indeed the accuracy is quite high and the recall is also better than for the previous models. So the F1 score is good. 
 We are satisfied about this model!
+
+- The caracteristics' importance is : 
+
+<img src="https://user-images.githubusercontent.com/74456180/119839835-c0c76700-bf04-11eb-8de5-697731a71096.jpg" width="600" height="350">
+
+The image above shows the importance of each index. We can see that for predicting C2 and A1 the Model A (Natural Language) is better than  Model C (Table). For predicting C1, the Model C (Table) is better. For predicting B1, A2 and B2, Model A (Natural Language) is better. Model C (Table) is particularly bad at predicting B2. 
+
+We also remark that the top score and the top category of the Model C (Table) is better. 
+
+This shows that the two models are complementary, indeed for predicting class per class, the Model A (Natural Language) is generally better but for the top scores and categories, the other model is better. 
 
 ## AIcrowd <img src="https://user-images.githubusercontent.com/74456180/117639815-a1021600-b184-11eb-9ba3-46607da15789.png" width="30" height="30">
 
