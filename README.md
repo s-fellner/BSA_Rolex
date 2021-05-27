@@ -196,7 +196,7 @@ Unfortunately this Model did not work as google AutoML Tables do not support mor
 
 ### Model E (Word/Word)
 
-The idea of this model is to tokenize each phrase and to create one row for each tocken and the associated level of this word. 
+The idea of this model is to tokenize each phrase and to create one row for each tocken and the associated level of this word. We unfortunately did not had time to try building this model, it would however been a good thing to try. 
 
 ### Final Model 
 
