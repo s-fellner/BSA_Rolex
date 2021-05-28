@@ -211,7 +211,7 @@ We chose Model A (Natural Language) and Model C (Table)
 
 Indeed, we noticed that the model A is good at predicting the extremities (level A1 and C2) but is more hesitating in the intermediary levels. So we will use the model C to decide between levels A2 to C1.
 
-To proceed in combining those two models, we firstly established an algorithm predicting a sentence in model A and in model C. This algorithm wil then select the prediction with the highest score. This method worked well, but we figured a way to improve this way to work.
+To proceed in combining those two models, we firstly established an algorithm predicting a sentence in model A and in model C. This algorithm will then select the prediction with the highest score. This method worked well, but we figured a way to improve this way to work.
 
 We build a "Monitoring" model, in which we enter all the scores predicted from both model A and C. To achieve a proper model building, we split the training model in a 3000 lines and a 1800 lines datasets. The 3000 lines datasets were used to build a model A and a model C, and the 1800 dataset to build the monitoring model.
 
