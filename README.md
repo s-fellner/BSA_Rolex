@@ -113,7 +113,7 @@ Note : All our F1 scores are based on a threshold score of 0.5.
 
 ### Model A (Natural Language)
 
-For our first model, we used google cloud services to classify the data. We only uploaded our dataset on AutoMl from natural language. 
+For our first model, we used google cloud services to classify the data. We only uploaded our dataset on AutoML from natural language. 
 It is possible to adjust the sensibility of the model by balancing the precision and recal rate. 
 
 ***Results of the model with our dataset***
