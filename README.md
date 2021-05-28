@@ -144,7 +144,7 @@ To increase the accuracy of the model, we made some feature engineering still wi
 - The ratio of cognates in the phrase (number of cognates over total number of words)
 - The number of punctuation
 
-To find the cognates in the phrases, we reused the exercise of the course's assignment where we had to find the cognates with the highest term frequency in english (not considering those where the difference between the term frequency in French and in English exceed 1,000,000). We cleaned the cognates dictionnary to delete the numbers. We buidt a table with 500,000 cognates. 
+To find the cognates in the phrases, we reused the exercise of the course's assignment where we had to find the cognates with the highest term frequency in english (not considering those where the difference between the term frequency in French and in English exceed 1,000,000). We cleaned the cognates dictionnary to delete the numbers. We built a table with 500,000 cognates. 
 
 ***Results of the model with our dataset***
 
