@@ -102,7 +102,7 @@ In the picture below is described the general architecture of the technologies w
 
 ## 🖥️ API and UI
 
-To create the API, we worked with app engine and the automMl API. We coded a python code to make a functionnal API. We made some HTML code to create the UI and make it look fancy. 
+To create the API, we worked with app engine and the automML API. We coded a python code to make a functionnal API. We made some HTML code to create the UI and make it look fancy. 
 
 Our callable API and UI can be found in this link : https://rich-wavelet-306313.oa.r.appspot.com/
 
