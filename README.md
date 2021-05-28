@@ -202,11 +202,11 @@ Unfortunately this Model did not work as google AutoML Tables do not support mor
 
 ### Model E (Word/Word)
 
-The idea of this model is to tokenize each phrase and to create one row for each tocken and the associated level of this word. We unfortunately did not had time to try building this model, it would however been a good thing to try. 
+The idea of this model is to tokenize each phrase and to create one row for each token and the associated level of this word. We unfortunately did not had time to try building this model, it would however been a good thing to try. 
 
 ### Final Model 
 
-The final model will be a combination of the best models, so that we will have a doble prediction to pic the best score of prediction between the two models. 
+The final model will be a combination of the best models, so that we will have a double prediction to pick the best score of prediction between the two models. 
 We chose Model A (Natural Language) and Model C (Table) 
 
 Indeed, we noticed that the model A is good at predicting the extremities (level A1 and C2) but is more hesitating in the intermediary levels. So we will use the model C to decide between levels A2 to C1.
