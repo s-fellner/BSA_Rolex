@@ -98,7 +98,7 @@ To label the data with the difficulty levels, we found some criterias in the int
 
 In the picture below is described the general architecture of the technologies we used in our project. 
 
-<img src="https://user-images.githubusercontent.com/74456180/119887698-bc1aa700-bf34-11eb-8840-2e6763174f42.JPG" width="600" height="400">
+<img src="https://user-images.githubusercontent.com/74456180/119961870-cf665a80-bfa6-11eb-9094-dc4ed099723a.JPG" width="600" height="400">
 
 ## 🖥️ API and UI
 
