@@ -159,7 +159,7 @@ We note that this model did not improve our results. Indeed, we don't have a lot
 
 ### Model C (Tables) 
 
-We used the Tables module of google cloud platform. It allow us to sturucture our data per features. It supports different types of formats for each feature and detects the correlation with the target. Then it built the optimal model on several features as we can see in the picture below. 
+We used the Tables module of google cloud platform. It allow us to structure our data per features. It supports different types of formats for each feature and detects the correlation with the target. Then it built the optimal model on several features as we can see in the picture below. 
 
 <img src="https://user-images.githubusercontent.com/74456180/117634742-84afaa80-b17f-11eb-9165-6ffffc815862.png" width="1700" height="200">
 
