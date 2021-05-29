@@ -173,7 +173,7 @@ We used the Tables module of google cloud platform. It allow us to structure our
 <img src="https://user-images.githubusercontent.com/74456180/117644246-96964b00-b189-11eb-8d15-756481e0b6d7.jpg" width="500" height="350">
 
 As said before, we only decided to work with another module of google cloud and reusing only what we did for model 2, we see that the precision has improved a lot. 
-Howerver we have a low recall. We think we can improve that by vectorizing the senteces. So we decided to improve our model. 
+However we have a low recall. We think we can improve that by vectorizing the senteces. So we decided to improve our model. 
 
 ***Improvement***
 
