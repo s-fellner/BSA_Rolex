@@ -1,50 +1,11 @@
-# Copyright 2018 Google LLC
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-# [START gae_python38_render_template]
-# [START gae_python3_render_template]
-
-from google.cloud import automl
-
-import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="clefadmin.json"
-
-# You must first create a dataset, using the `eu` endpoint, before you can
-# call other operations such as: list, get, import, delete, etc.
-client_options = {'api_endpoint': 'eu-automl.googleapis.com:443'}
-
-# TODO(developer): Uncomment and set the following variables
-project_id = '685330484131'
-model_id = 'TCN9213757907181502464'
-
-prediction_client = automl.PredictionServiceClient(client_options=client_options)
-
-# Get the full path of the model.
-model_full_id = automl.AutoMlClient.model_path(project_id, "eu", model_id)
-
-# Supported mime_types: 'text/plain', 'text/html'
-# https://cloud.google.com/automl/docs/reference/rpc/google.cloud.automl.v1#textsnippet
-def predict(content):
-  text_snippet = automl.TextSnippet(content=content, mime_type="text/plain")
-  payload = automl.ExamplePayload(text_snippet=text_snippet)
-
-  response = prediction_client.predict(name=model_full_id, payload=payload)
-  return response
-
+# Import flask
 from flask import Flask, request, render_template
-    
+
 app = Flask(__name__)
+
+# Load our precit functions (API of NL, Tables and our Monitor Classifier)
+from predict import full_pred, Monitor_Classification
+
 
 @app.route('/', methods =['GET', 'POST'])
 def evaluate():
@@ -54,10 +15,11 @@ def evaluate():
         if request.method == "POST":
             phrase =  request.form.get('phrase')
             if phrase != '':
-                lvl = predict(phrase)
+                full_prediction = full_pred(phrase, monitor=True)
+                monitor_pred = Monitor_Classification(full_prediction)
                 phrase = '"' + phrase + '"'
-                top_score = ' with a probability of ' + str(round(lvl.payload[0]. classification.score*100)) + '%.'
-                top_cat = 'Level ' + str(lvl.payload[0].display_name)
+                top_score = ' with a probability of ' + str(round(monitor_pred['top_score'] * 100, 2)) + '%.'
+                top_cat = 'Level ' + str(monitor_pred['top_cat'])
         return render_template("index.html", phrase = phrase, top_cat = top_cat, top_score = top_score)          
 
 if __name__ == '__main__':
