@@ -1,4 +1,4 @@
-from predict import full_pred, Monitor_Classification
+from predictors import full_pred, Monitor_Classification
 
 test = full_pred('Ceci est un test', monitor=True)
 test_moni = Monitor_Classification(test)
