@@ -1,6 +1,0 @@
-Flask==1.1.2
-google-cloud-automl==2.2.0
-spacy==2.2.4
-https://files.pythonhosted.org/packages/37/45/01e7455a9659528e77a414b222326d4c525796e4f571bbabcb2e0ff3d1f4/download-0.3.5-py3-none-any.whl
-https://files.pythonhosted.org/packages/20/f9/c7fd6082d31fca3f9797f95ccf137ac6691ee9742e964e4483bbf480d13f/fr-3.0-py2.py3-none-any.whl
-https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-2.2.5/fr_core_news_sm-2.2.5.tar.gz
