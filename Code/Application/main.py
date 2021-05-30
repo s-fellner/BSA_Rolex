@@ -4,7 +4,7 @@ from flask import Flask, request, render_template
 app = Flask(__name__)
 
 # Load our precit functions (API of NL, Tables and our Monitor Classifier)
-from predict import full_pred, Monitor_Classification
+from predictors import full_pred, Monitor_Classification
 
 
 @app.route('/', methods =['GET', 'POST'])
